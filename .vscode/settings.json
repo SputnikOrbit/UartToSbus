@@ -1,0 +1,10 @@
+{
+    "files.associations": {
+        "serial.h": "c",
+        "string": "c",
+        "chassis_controller.hpp": "c",
+        "thread": "c",
+        "sbus.hpp": "c",
+        "v8stdint.h": "c"
+    }
+}
