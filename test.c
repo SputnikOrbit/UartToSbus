@@ -12,7 +12,7 @@ int main(){
 
     serial::Serial SbusPort;
 
-    SbusPort.setPort("COM5");
+    SbusPort.setPort("COM7");
 
     SbusPort.setBaudrate(115200);
     serial::Timeout _time = serial::Timeout::simpleTimeout(2000); //Timeout //超时等待
@@ -35,10 +35,20 @@ int main(){
     while (std::cin >> cmd){
         if (cmd == "forward")
             mecanum.chassis_forward_control();
+        else if (cmd == "backward")
+            mecanum.chassis_backward_control();
         else if (cmd == "rotate")
             mecanum.chassis_rotate_control();
+        else if (cmd == "unrotate")
+            mecanum.chassis_unrotate_control();
         else if (cmd == "lat")
             mecanum.chassis_lat_control();
+        else if (cmd == "unlat")
+            mecanum.chassis_unlat_control();
+        else if (cmd == "max")
+            mecanum.throttle_max();
+        else if (cmd == "idle")
+            mecanum.throttle_idle();
         else if (cmd == "circle")
             mecanum.chassis_circle_move();
         else if (cmd == "square")

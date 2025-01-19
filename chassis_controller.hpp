@@ -39,6 +39,7 @@ typedef struct
     float vx_set;
     float vy_set;
     float wz_set;
+    float throttle_debug;
 } chassis_move_t;
 
 extern chassis_move_t chassis_move;
@@ -53,8 +54,13 @@ public:
     ~chassis_controller();
 
     void chassis_rotate_control();
+    void chassis_unrotate_control();
+    void chassis_backward_control();
     void chassis_forward_control();
     void chassis_lat_control();
+    void chassis_unlat_control();   
+    void throttle_max();
+    void throttle_idle();
     void chassis_circle_move();
     void chassis_square_move();
     void chassis_stop();
