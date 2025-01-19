@@ -4,4 +4,20 @@
 
 无耻抄袭了William Woodall and John Harrison的代码，因为本人实在太弱，没有写出跨平台代码的功力，无比感谢。。。求放过
 
-![image-20241123011044708](README.assets/image-20241123011044708.png)
+<img src="README.assets/image-20241123011044708.png" alt="image-20241123011044708" style="zoom:25%;" />
+
+
+
+Ubuntu下编译命令：
+
+```shell
+g++ -g -std=c++11 -I../serial ../chassis_controller.cpp ../sbus.cpp ../test.c ../serial/serial.cc ../serial/unix.cc -o test
+```
+
+想要执行，必须
+
+```shell
+./test
+```
+
+现在的问题：多线程没搞明白

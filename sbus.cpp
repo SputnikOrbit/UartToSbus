@@ -21,6 +21,8 @@
 #include <iomanip>
 #include <serial/serial.h>
 
+extern serial::Serial SbusPort;
+
 void uart_to_sbus(){
     
     //motion 
@@ -51,21 +53,27 @@ for (int i = 0; i < 16; i++)
 //   {
 //     ROS_ERROR_STREAM("Unable to send data through serial port"); //If sending data fails, an error message is printed //如果发送数据失败，打印错误信息
 //   } 
+        try {
+            SbusPort.write(sbus_frame, 35); // Sends data to the downloader via serial port
+            std::cout << "sbus sent." << std::endl;
+        } catch (serial::IOException& e) {
+            std::cerr << "Unable to send data through serial port: " << e.what() << std::endl;
+        }
 }
 
 /*辅助功能函数*/
 void speed_to_sbus(chassis_move_t* chassis_move, uint16_t* channels){
 
     //lateral speed to roll
-    channels[0] = chassis_move->vy_set * 500 + 1500;
+    channels[0] = chassis_move->vy_set * 500 + PWM_MID;
     //forward speed to pitch
-    channels[1] = chassis_move->vx_set * 500 + 1500;
+    channels[1] = chassis_move->vx_set * 500 + PWM_MID;
     //yaw speed to yaw
-    channels[3] = chassis_move->wz_set * 500 + 1500;
-    //thrrottle set to mid
+    channels[3] = chassis_move->wz_set * 500 + PWM_MID;
+    //throttle set to mid
     channels[2] = PWM_MIN;
     //mode to ch5
-    channels[4] = (chassis_move->mode) * 500 + 1000;
+    channels[4] = (chassis_move->mode) * 500 + PWM_MID;
     //ch6 for arming switch
     channels[5] = PWM_MIN;
     //others for none
