@@ -21,3 +21,71 @@ g++ -g -std=c++11 -I../serial ../chassis_controller.cpp ../sbus.cpp ../test.c ..
 ```
 
 现在的问题：多线程没搞明白
+<img src="README.assets/image-20241123011044708.png" alt="image-20241123011044708" style="zoom:25%;" />
+
+## 开发日志
+
+从10月29日开始开发，中途一度废弃
+
+编译命令：在build下
+
+```shell
+g++ -g -std=c++11 -I..\serial ..\chassis_controller.cpp ..\sbus.cpp ..\test.c ..\serial\serial.cc ..\serial\win.cc -o test
+```
+
+使用SSCOM循环发送数据，确认可以收到
+
+ch1 up == lat 2000
+
+```
+0F 07 08 03 E8 03 E8 03 E8 03 E8 03 E8 03 E8 03 E8 03 E8 03 E8 03 E8 03 E8 03 E8 03 E8 03 E8 03 E8 0C E8
+```
+
+ch1 down==unlat 1000
+
+```
+0F 00 C8 03 E8 03 E8 03 E8 03 E8 03 E8 03 E8 03 E8 03 E8 03 E8 03 E8 03 E8 03 E8 03 E8 03 E8 03 E8 0C 2F
+```
+
+ch2 up==forward 2000
+
+```
+0F 03 E8 07 08 03 E8 03 E8 03 E8 03 E8 03 E8 03 E8 03 E8 03 E8 03 E8 03 E8 03 E8 03 E8 03 E8 03 E8 0C E8
+```
+
+ch2 down==backward 1000
+
+```
+0F 03 E8 00 C8 03 E8 03 E8 03 E8 03 E8 03 E8 03 E8 03 E8 03 E8 03 E8 03 E8 03 E8 03 E8 03 E8 03 E8 0C 2F
+```
+
+ch3 up == max
+
+```
+0F 03 E8 03 E8 07 08 03 E8 03 E8 03 E8 03 E8 03 E8 03 E8 03 E8 03 E8 03 E8 03 E8 03 E8 03 E8 03 E8 0C E8
+```
+
+ch3 down == idle
+
+```
+0F 03 E8 03 E8 00 C8 03 E8 03 E8 03 E8 03 E8 03 E8 03 E8 03 E8 03 E8 03 E8 03 E8 03 E8 03 E8 03 E8 0C 2F
+```
+
+ch4 up == rotate 2000
+
+```
+0F 03 E8 03 E8 03 E8 07 08 05 DC 03 E8 03 E8 03 E8 03 E8 03 E8 03 E8 03 E8 03 E8 03 E8 03 E8 03 E8 0C DA
+```
+
+ch4 down == unrot 1000
+
+```
+0F 03 E8 03 E8 03 E8 00 C8 05 DC 03 E8 03 E8 03 E8 03 E8 03 E8 03 E8 03 E8 03 E8 03 E8 03 E8 03 E8 0C 1D
+```
+
+all mid == stop
+
+```sh
+0F 03 E8 03 E8 03 E8 03 E8 03 E8 03 E8 03 E8 03 E8 03 E8 03 E8 03 E8 03 E8 03 E8 03 E8 03 E8 03 E8 0C 0C
+```
+

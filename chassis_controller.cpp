@@ -29,6 +29,7 @@ chassis_controller::chassis_controller(){
     chassis_move.vx_set = 0;
     chassis_move.vy_set = 0;
     chassis_move.wz_set = 0;
+    chassis_move.throttle_debug = 0;
     
 }
 
@@ -37,6 +38,7 @@ chassis_controller::~chassis_controller(){
     chassis_move.vx_set = 0;
     chassis_move.vy_set = 0;
     chassis_move.wz_set = 0;
+    chassis_move.throttle_debug = 0;
     printf("Chassis controller destroyed.\n");
     
 }
@@ -47,6 +49,7 @@ void chassis_controller::chassis_stop() {
     chassis_move.vx_set = 0;
     chassis_move.vy_set = 0;
     chassis_move.wz_set = 0;
+    chassis_move.throttle_debug = 0;
 }
 
 void chassis_controller::chassis_forward_control() {
@@ -55,6 +58,16 @@ void chassis_controller::chassis_forward_control() {
     chassis_move.vx_set = 1.0;
     chassis_move.vy_set = 0;
     chassis_move.wz_set = 0;
+    chassis_move.throttle_debug = 0;
+}
+
+void chassis_controller::chassis_backward_control() {
+    printf("\033[32mBackward moving.\033[0m\n"); // 绿色
+    chassis_move.mode = YAW_LOCK_MODE;
+    chassis_move.vx_set = -1.0;
+    chassis_move.vy_set = 0;
+    chassis_move.wz_set = 0;
+    chassis_move.throttle_debug = 0;
 }
 
 void chassis_controller::chassis_rotate_control() {
@@ -63,6 +76,16 @@ void chassis_controller::chassis_rotate_control() {
     chassis_move.vx_set = 0;
     chassis_move.vy_set = 0;
     chassis_move.wz_set = 1.0;
+    chassis_move.throttle_debug = 0;
+}
+
+void chassis_controller::chassis_unrotate_control() {
+    printf("\033[34munRotating.\033[0m\n"); // 蓝色
+    chassis_move.mode = LAT_LOCK_MODE;
+    chassis_move.vx_set = 0;
+    chassis_move.vy_set = 0;
+    chassis_move.wz_set = -1.0;
+    chassis_move.throttle_debug = 0;
 }
 
 void chassis_controller::chassis_lat_control() {
@@ -70,6 +93,16 @@ void chassis_controller::chassis_lat_control() {
     chassis_move.mode = YAW_LOCK_MODE;
     chassis_move.vx_set = 0;
     chassis_move.vy_set = 1.0;
+    chassis_move.wz_set = 0;
+    chassis_move.throttle_debug = 0;
+}
+void chassis_controller::chassis_unlat_control() {
+    printf("\033[33munLateral moving.\033[0m\n"); // 黄色
+    chassis_move.mode = YAW_LOCK_MODE;
+    chassis_move.vx_set = 0;
+    chassis_move.vy_set = -1.0;
+    chassis_move.wz_set = 0;
+    chassis_move.throttle_debug = 0;
 }
 
 void chassis_controller::chassis_circle_move(){
@@ -80,4 +113,22 @@ void chassis_controller::chassis_square_move(){
     printf("Square moving.\n");
 }
 
+void chassis_controller::throttle_max (){
+    printf("\033[31mThrottle debug max pos.\033[0m\n"); // 红色
+    chassis_move.mode = YAW_LOCK_MODE;
+    chassis_move.vx_set = 0;
+    chassis_move.vy_set = 0;
+    chassis_move.wz_set = 0;
+    chassis_move.throttle_debug = 1.0;
+
+}
+
+void chassis_controller::throttle_idle (){
+        printf("\033[31mThrottle debug idle pos.\033[0m\n"); // 红色
+    chassis_move.mode = YAW_LOCK_MODE;
+    chassis_move.vx_set = 0;
+    chassis_move.vy_set = 0;
+    chassis_move.wz_set = 0;
+    chassis_move.throttle_debug = -1.0;
+}
 
