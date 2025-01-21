@@ -1,0 +1,78 @@
+[0.000000] (-) TimerEvent: {}
+[0.000491] (chassis_controller) JobQueued: {'identifier': 'chassis_controller', 'dependencies': OrderedDict()}
+[0.000641] (chassis_controller) JobStarted: {'identifier': 'chassis_controller'}
+[0.004759] (chassis_controller) JobProgress: {'identifier': 'chassis_controller', 'progress': 'cmake'}
+[0.005046] (chassis_controller) JobProgress: {'identifier': 'chassis_controller', 'progress': 'build'}
+[0.006124] (chassis_controller) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/sputnik/Voloneiz/UartToSbus/ROS_humble/src/chassis_controller/build/chassis_controller', '--', '-j20', '-l20'], 'cwd': '/home/sputnik/Voloneiz/UartToSbus/ROS_humble/src/chassis_controller/build/chassis_controller', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'sputnik'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/sputnik'), ('CONDA_SHLVL', '0'), ('OLDPWD', '/home/sputnik/Voloneiz/UartToSbus/ROS_humble/src'), ('DESKTOP_SESSION', 'ubuntu-xorg'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('MANAGERPID', '1159'), ('SYSTEMD_EXEC_PID', '2085'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '5940'), ('IM_CONFIG_PHASE', '1'), ('https_proxy', 'http://127.0.0.1:7890'), ('COLCON_PREFIX_PATH', '/home/sputnik/Voloneiz/UartToSbus/ROS_humble/src/chassis_controller/install:/home/sputnik/Voloneiz/UartToSbus/ROS_humble/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'fcitx'), ('LOGNAME', 'sputnik'), ('http_proxy', 'http://127.0.0.1:7890'), ('JOURNAL_STREAM', '8:24054'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'sputnik'), ('STM32_PRG_PATH', '/home/sputnik/STMicroelectronics/STM32Cube/STM32CubeProgrammer/bin'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/sputnik/anaconda3/condabin:/opt/gcc-arm-none-eabi-9-2020-q2-update/bin:/usr/lib/ccache:/home/sputnik/ardupilot/Tools/autotest:/opt/gcc-arm-none-eabi-10-2020-q4-major/bin:/home/sputnik/.cargo/bin:/home/sputnik/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/sputnik-Legion-Y9000P-IAH7H:@/tmp/.ICE-unix/1573,unix/sputnik-Legion-Y9000P-IAH7H:/tmp/.ICE-unix/1573'), ('INVOCATION_ID', 'a28f5c44a91f497a919d58dbf823b589'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=fcitx'), ('XDG_SESSION_DESKTOP', 'ubuntu-xorg'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/sputnik/Voloneiz/UartToSbus/ROS_humble/install/chassis_controller:/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/sputnik/anaconda3/bin/python'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:7765f852-c883-4858-a471-606dce493763'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu-xorg'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('QT_IM_MODULE', 'fcitx'), ('PWD', '/home/sputnik/Voloneiz/UartToSbus/ROS_humble/src/chassis_controller/build/chassis_controller'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg'), ('CONDA_EXE', '/home/sputnik/anaconda3/bin/conda'), ('CLUTTER_IM_MODULE', 'fcitx'), ('XDG_DATA_DIRS', '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/sputnik/Voloneiz/UartToSbus/ROS_humble/install/chassis_controller:/opt/ros/humble')]), 'shell': False}
+[0.037764] (chassis_controller) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target chassis_controll\x1b[0m\n'}
+[0.051831] (chassis_controller) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/chassis_controll.dir/src/chassis_controller.cpp.o\x1b[0m\n'}
+[0.099838] (-) TimerEvent: {}
+[0.200079] (-) TimerEvent: {}
+[0.300422] (-) TimerEvent: {}
+[0.400755] (-) TimerEvent: {}
+[0.501044] (-) TimerEvent: {}
+[0.601368] (-) TimerEvent: {}
+[0.701762] (-) TimerEvent: {}
+[0.802014] (-) TimerEvent: {}
+[0.902291] (-) TimerEvent: {}
+[1.002558] (-) TimerEvent: {}
+[1.102785] (-) TimerEvent: {}
+[1.203065] (-) TimerEvent: {}
+[1.303332] (-) TimerEvent: {}
+[1.403570] (-) TimerEvent: {}
+[1.503841] (-) TimerEvent: {}
+[1.604105] (-) TimerEvent: {}
+[1.704366] (-) TimerEvent: {}
+[1.804597] (-) TimerEvent: {}
+[1.904842] (-) TimerEvent: {}
+[2.005128] (-) TimerEvent: {}
+[2.105456] (-) TimerEvent: {}
+[2.205688] (-) TimerEvent: {}
+[2.305911] (-) TimerEvent: {}
+[2.406164] (-) TimerEvent: {}
+[2.506387] (-) TimerEvent: {}
+[2.606706] (-) TimerEvent: {}
+[2.706930] (-) TimerEvent: {}
+[2.807254] (-) TimerEvent: {}
+[2.907489] (-) TimerEvent: {}
+[3.007807] (-) TimerEvent: {}
+[3.108164] (-) TimerEvent: {}
+[3.208473] (-) TimerEvent: {}
+[3.308808] (-) TimerEvent: {}
+[3.409136] (-) TimerEvent: {}
+[3.509465] (-) TimerEvent: {}
+[3.609795] (-) TimerEvent: {}
+[3.710139] (-) TimerEvent: {}
+[3.810468] (-) TimerEvent: {}
+[3.910778] (-) TimerEvent: {}
+[4.011033] (-) TimerEvent: {}
+[4.111344] (-) TimerEvent: {}
+[4.211723] (-) TimerEvent: {}
+[4.312043] (-) TimerEvent: {}
+[4.412364] (-) TimerEvent: {}
+[4.512686] (-) TimerEvent: {}
+[4.600863] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sputnik/Voloneiz/UartToSbus/ROS_humble/src/chassis_controller/src/chassis_controller.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid ChassisController::chassis_controll_callback(std_msgs::msg::String_<std::allocator<void> >::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[4.600997] (chassis_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sputnik/Voloneiz/UartToSbus/ROS_humble/src/chassis_controller/src/chassis_controller.cpp:45:79:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kmsg\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[4.601040] (chassis_controller) StderrLine: {'line': b'   45 |         void chassis_controll_callback(\x1b[01;35m\x1b[Kconst std_msgs::msg::String::SharedPtr msg\x1b[m\x1b[K){\n'}
+[4.601071] (chassis_controller) StderrLine: {'line': b'      |                                        \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[4.609600] (chassis_controller) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable chassis_controll\x1b[0m\n'}
+[4.612747] (-) TimerEvent: {}
+[4.713054] (-) TimerEvent: {}
+[4.785526] (chassis_controller) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/chassis_controll.dir/src/chassis_controller.cpp.o: in function `ChassisController::ChassisController()':\n"}
+[4.785654] (chassis_controller) StderrLine: {'line': b"chassis_controller.cpp:(.text._ZN17ChassisControllerC2Ev[_ZN17ChassisControllerC5Ev]+0x1f4): undefined reference to `serial::Serial::Serial(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, unsigned int, serial::Timeout, serial::bytesize_t, serial::parity_t, serial::stopbits_t, serial::flowcontrol_t)'\n"}
+[4.785692] (chassis_controller) StderrLine: {'line': b"/usr/bin/ld: chassis_controller.cpp:(.text._ZN17ChassisControllerC2Ev[_ZN17ChassisControllerC5Ev]+0x23f): undefined reference to `serial::Serial::open()'\n"}
+[4.785843] (chassis_controller) StderrLine: {'line': b"/usr/bin/ld: chassis_controller.cpp:(.text._ZN17ChassisControllerC2Ev[_ZN17ChassisControllerC5Ev]+0x84d): undefined reference to `serial::Serial::~Serial()'\n"}
+[4.785913] (chassis_controller) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/chassis_controll.dir/src/chassis_controller.cpp.o: in function `ChassisController::uart_init()':\n"}
+[4.785946] (chassis_controller) StderrLine: {'line': b"chassis_controller.cpp:(.text._ZN17ChassisController9uart_initEv[_ZN17ChassisController9uart_initEv]+0x5c): undefined reference to `serial::Serial::setPort(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'\n"}
+[4.786106] (chassis_controller) StderrLine: {'line': b"/usr/bin/ld: chassis_controller.cpp:(.text._ZN17ChassisController9uart_initEv[_ZN17ChassisController9uart_initEv]+0x8b): undefined reference to `serial::Serial::setBaudrate(unsigned int)'\n"}
+[4.786211] (chassis_controller) StderrLine: {'line': b"/usr/bin/ld: chassis_controller.cpp:(.text._ZN17ChassisController9uart_initEv[_ZN17ChassisController9uart_initEv]+0xb6): undefined reference to `serial::Serial::setTimeout(serial::Timeout&)'\n"}
+[4.790915] (chassis_controller) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/chassis_controll.dir/src/chassis_controller.cpp.o: in function `ChassisController::~ChassisController()':\n"}
+[4.791046] (chassis_controller) StderrLine: {'line': b"chassis_controller.cpp:(.text._ZN17ChassisControllerD2Ev[_ZN17ChassisControllerD5Ev]+0x2c): undefined reference to `serial::Serial::~Serial()'\n"}
+[4.809618] (chassis_controller) StderrLine: {'line': b'collect2: error: ld returned 1 exit status\n'}
+[4.810895] (chassis_controller) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/chassis_controll.dir/build.make:159: chassis_controll] Error 1\n'}
+[4.811103] (chassis_controller) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/chassis_controll.dir/all] Error 2\n'}
+[4.811383] (chassis_controller) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[4.812989] (chassis_controller) CommandEnded: {'returncode': 2}
+[4.813303] (-) TimerEvent: {}
+[4.817823] (chassis_controller) JobEnded: {'identifier': 'chassis_controller', 'rc': 2}
+[4.828141] (-) EventReactorShutdown: {}

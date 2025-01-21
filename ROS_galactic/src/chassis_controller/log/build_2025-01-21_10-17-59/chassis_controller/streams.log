@@ -1,0 +1,23 @@
+[0.006s] Invoking command in '/home/sputnik/Voloneiz/UartToSbus/ROS_humble/src/chassis_controller/build/chassis_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/sputnik/Voloneiz/UartToSbus/ROS_humble/src/chassis_controller/build/chassis_controller -- -j20 -l20
+[0.037s] [35m[1mConsolidate compiler generated dependencies of target chassis_controll[0m
+[0.051s] [ 50%] [32mBuilding CXX object CMakeFiles/chassis_controll.dir/src/chassis_controller.cpp.o[0m
+[4.600s] [01m[K/home/sputnik/Voloneiz/UartToSbus/ROS_humble/src/chassis_controller/src/chassis_controller.cpp:[m[K In member function ‘[01m[Kvoid ChassisController::chassis_controll_callback(std_msgs::msg::String_<std::allocator<void> >::SharedPtr)[m[K’:
+[4.600s] [01m[K/home/sputnik/Voloneiz/UartToSbus/ROS_humble/src/chassis_controller/src/chassis_controller.cpp:45:79:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmsg[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[4.600s]    45 |         void chassis_controll_callback([01;35m[Kconst std_msgs::msg::String::SharedPtr msg[m[K){
+[4.600s]       |                                        [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[4.609s] [100%] [32m[1mLinking CXX executable chassis_controll[0m
+[4.785s] /usr/bin/ld: CMakeFiles/chassis_controll.dir/src/chassis_controller.cpp.o: in function `ChassisController::ChassisController()':
+[4.785s] chassis_controller.cpp:(.text._ZN17ChassisControllerC2Ev[_ZN17ChassisControllerC5Ev]+0x1f4): undefined reference to `serial::Serial::Serial(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, unsigned int, serial::Timeout, serial::bytesize_t, serial::parity_t, serial::stopbits_t, serial::flowcontrol_t)'
+[4.785s] /usr/bin/ld: chassis_controller.cpp:(.text._ZN17ChassisControllerC2Ev[_ZN17ChassisControllerC5Ev]+0x23f): undefined reference to `serial::Serial::open()'
+[4.785s] /usr/bin/ld: chassis_controller.cpp:(.text._ZN17ChassisControllerC2Ev[_ZN17ChassisControllerC5Ev]+0x84d): undefined reference to `serial::Serial::~Serial()'
+[4.785s] /usr/bin/ld: CMakeFiles/chassis_controll.dir/src/chassis_controller.cpp.o: in function `ChassisController::uart_init()':
+[4.785s] chassis_controller.cpp:(.text._ZN17ChassisController9uart_initEv[_ZN17ChassisController9uart_initEv]+0x5c): undefined reference to `serial::Serial::setPort(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+[4.786s] /usr/bin/ld: chassis_controller.cpp:(.text._ZN17ChassisController9uart_initEv[_ZN17ChassisController9uart_initEv]+0x8b): undefined reference to `serial::Serial::setBaudrate(unsigned int)'
+[4.786s] /usr/bin/ld: chassis_controller.cpp:(.text._ZN17ChassisController9uart_initEv[_ZN17ChassisController9uart_initEv]+0xb6): undefined reference to `serial::Serial::setTimeout(serial::Timeout&)'
+[4.790s] /usr/bin/ld: CMakeFiles/chassis_controll.dir/src/chassis_controller.cpp.o: in function `ChassisController::~ChassisController()':
+[4.790s] chassis_controller.cpp:(.text._ZN17ChassisControllerD2Ev[_ZN17ChassisControllerD5Ev]+0x2c): undefined reference to `serial::Serial::~Serial()'
+[4.809s] collect2: error: ld returned 1 exit status
+[4.810s] gmake[2]: *** [CMakeFiles/chassis_controll.dir/build.make:159: chassis_controll] Error 1
+[4.810s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/chassis_controll.dir/all] Error 2
+[4.811s] gmake: *** [Makefile:146: all] Error 2
+[4.812s] Invoked command in '/home/sputnik/Voloneiz/UartToSbus/ROS_humble/src/chassis_controller/build/chassis_controller' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/sputnik/Voloneiz/UartToSbus/ROS_humble/src/chassis_controller/build/chassis_controller -- -j20 -l20

@@ -1,0 +1,38 @@
+[0.006s] Invoking command in '/home/sputnik/Voloneiz/UartToSbus/ROS_humble/src/chassis_controller/build/chassis_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/sputnik/Voloneiz/UartToSbus/ROS_humble/src/chassis_controller -DCMAKE_INSTALL_PREFIX=/home/sputnik/Voloneiz/UartToSbus/ROS_humble/src/chassis_controller/install/chassis_controller
+[0.051s] -- The C compiler identification is GNU 11.4.0
+[0.094s] -- The CXX compiler identification is GNU 11.4.0
+[0.101s] -- Detecting C compiler ABI info
+[0.144s] -- Detecting C compiler ABI info - done
+[0.149s] -- Check for working C compiler: /usr/lib/ccache/cc - skipped
+[0.149s] -- Detecting C compile features
+[0.149s] -- Detecting C compile features - done
+[0.151s] -- Detecting CXX compiler ABI info
+[0.200s] -- Detecting CXX compiler ABI info - done
+[0.205s] -- Check for working CXX compiler: /usr/lib/ccache/c++ - skipped
+[0.205s] -- Detecting CXX compile features
+[0.205s] -- Detecting CXX compile features - done
+[0.206s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.429s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.477s] -- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)
+[0.497s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.499s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.503s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.509s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.518s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.541s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.542s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.601s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.630s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.655s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.659s] -- Looking for pthread.h
+[0.724s] -- Looking for pthread.h - found
+[0.725s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.791s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.792s] -- Found Threads: TRUE  
+[0.819s] [31mCMake Error at CMakeLists.txt:12 (find_package):
+[0.819s]   find_package called with invalid argument "REQUIERD"
+[0.819s] 
+[0.819s] [0m
+[0.856s] -- Configuring incomplete, errors occurred!
+[0.856s] See also "/home/sputnik/Voloneiz/UartToSbus/ROS_humble/src/chassis_controller/build/chassis_controller/CMakeFiles/CMakeOutput.log".
+[0.862s] Invoked command in '/home/sputnik/Voloneiz/UartToSbus/ROS_humble/src/chassis_controller/build/chassis_controller' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/sputnik/Voloneiz/UartToSbus/ROS_humble/src/chassis_controller -DCMAKE_INSTALL_PREFIX=/home/sputnik/Voloneiz/UartToSbus/ROS_humble/src/chassis_controller/install/chassis_controller

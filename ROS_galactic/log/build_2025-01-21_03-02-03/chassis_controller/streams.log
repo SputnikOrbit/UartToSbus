@@ -1,0 +1,69 @@
+[0.045s] Invoking command in '/home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/build/chassis_controller': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake /home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/src/chassis_controller -DCMAKE_INSTALL_PREFIX=/home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/install/chassis_controller
+[0.276s] -- The C compiler identification is GNU 9.4.0
+[0.455s] -- The CXX compiler identification is GNU 9.4.0
+[0.470s] -- Check for working C compiler: /usr/bin/cc
+[0.627s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.634s] -- Detecting C compiler ABI info
+[0.791s] -- Detecting C compiler ABI info - done
+[0.815s] -- Detecting C compile features
+[0.816s] -- Detecting C compile features - done
+[0.822s] -- Check for working CXX compiler: /usr/bin/c++
+[0.996s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.998s] -- Detecting CXX compiler ABI info
+[1.171s] -- Detecting CXX compiler ABI info - done
+[1.196s] -- Detecting CXX compile features
+[1.197s] -- Detecting CXX compile features - done
+[1.203s] -- Found ament_cmake: 1.1.6 (/opt/ros/galactic/share/ament_cmake/cmake)
+[1.264s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[1.264s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.474s] -- Found rclcpp: 9.2.2 (/opt/ros/galactic/share/rclcpp/cmake)
+[1.599s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.616s] -- Found rosidl_adapter: 2.2.3 (/opt/ros/galactic/share/rosidl_adapter/cmake)
+[1.813s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[1.883s] -- Found FastRTPS: /opt/ros/galactic/include  
+[2.076s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.230s] -- Found rmw_implementation_cmake: 3.3.1 (/opt/ros/galactic/share/rmw_implementation_cmake/cmake)
+[2.238s] -- Found rmw_cyclonedds_cpp: 0.22.6 (/opt/ros/galactic/share/rmw_cyclonedds_cpp/cmake)
+[2.289s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[2.292s] -- Looking for pthread.h
+[2.469s] -- Looking for pthread.h - found
+[2.470s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[2.634s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[2.635s] -- Looking for pthread_create in pthreads
+[2.774s] -- Looking for pthread_create in pthreads - not found
+[2.775s] -- Looking for pthread_create in pthread
+[2.937s] -- Looking for pthread_create in pthread - found
+[2.940s] -- Found Threads: TRUE  
+[3.467s] -- Configuring done
+[3.486s] -- Generating done
+[3.494s] -- Build files have been written to: /home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/build/chassis_controller
+[3.513s] Invoked command in '/home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/build/chassis_controller' returned '0': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake /home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/src/chassis_controller -DCMAKE_INSTALL_PREFIX=/home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/install/chassis_controller
+[3.521s] Invoking command in '/home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/build/chassis_controller': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --build /home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/build/chassis_controller -- -j4 -l4
+[3.612s] [35m[1mScanning dependencies of target chassis_control[0m
+[3.761s] [ 40%] [32mBuilding CXX object CMakeFiles/chassis_control.dir/src/chassis_controller.cpp.o[0m
+[3.762s] [ 40%] [32mBuilding CXX object CMakeFiles/chassis_control.dir/src/serial/win.cc.o[0m
+[3.762s] [ 60%] [32mBuilding CXX object CMakeFiles/chassis_control.dir/src/serial/unix.cc.o[0m
+[3.762s] [ 80%] [32mBuilding CXX object CMakeFiles/chassis_control.dir/src/serial/serial.cc.o[0m
+[22.251s] [100%] [32m[1mLinking CXX executable chassis_control[0m
+[22.985s] [100%] Built target chassis_control
+[23.013s] Invoked command in '/home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/build/chassis_controller' returned '0': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --build /home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/build/chassis_controller -- -j4 -l4
+[23.047s] Invoking command in '/home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/build/chassis_controller': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --install /home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/build/chassis_controller
+[23.068s] -- Install configuration: ""
+[23.068s] -- Installing: /home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/install/chassis_controller/lib/chassis_controller/chassis_control
+[23.075s] -- Set runtime path of "/home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/install/chassis_controller/lib/chassis_controller/chassis_control" to ""
+[23.075s] -- Installing: /home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/install/chassis_controller/share/ament_index/resource_index/package_run_dependencies/chassis_controller
+[23.076s] -- Installing: /home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/install/chassis_controller/share/ament_index/resource_index/parent_prefix_path/chassis_controller
+[23.077s] -- Installing: /home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/install/chassis_controller/share/chassis_controller/environment/ament_prefix_path.sh
+[23.077s] -- Installing: /home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/install/chassis_controller/share/chassis_controller/environment/ament_prefix_path.dsv
+[23.077s] -- Installing: /home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/install/chassis_controller/share/chassis_controller/environment/path.sh
+[23.078s] -- Installing: /home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/install/chassis_controller/share/chassis_controller/environment/path.dsv
+[23.078s] -- Installing: /home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/install/chassis_controller/share/chassis_controller/local_setup.bash
+[23.078s] -- Installing: /home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/install/chassis_controller/share/chassis_controller/local_setup.sh
+[23.079s] -- Installing: /home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/install/chassis_controller/share/chassis_controller/local_setup.zsh
+[23.079s] -- Installing: /home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/install/chassis_controller/share/chassis_controller/local_setup.dsv
+[23.080s] -- Installing: /home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/install/chassis_controller/share/chassis_controller/package.dsv
+[23.080s] -- Installing: /home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/install/chassis_controller/share/ament_index/resource_index/packages/chassis_controller
+[23.081s] -- Installing: /home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/install/chassis_controller/share/chassis_controller/cmake/chassis_controllerConfig.cmake
+[23.081s] -- Installing: /home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/install/chassis_controller/share/chassis_controller/cmake/chassis_controllerConfig-version.cmake
+[23.081s] -- Installing: /home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/install/chassis_controller/share/chassis_controller/package.xml
+[23.089s] Invoked command in '/home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/build/chassis_controller' returned '0': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --install /home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/build/chassis_controller

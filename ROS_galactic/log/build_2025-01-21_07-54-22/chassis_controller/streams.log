@@ -1,0 +1,26 @@
+[0.079s] Invoking command in '/home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/build/chassis_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/install/chassis_controller_channels:/home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/install/chassis_controller_test:/opt/ros/galactic /usr/bin/cmake --build /home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/build/chassis_controller -- -j4 -l4
+[1.314s] [35m[1mScanning dependencies of target chassis_control[0m
+[1.315s] [ 20%] [32mBuilding CXX object CMakeFiles/chassis_control.dir/src/chassis_controller.cpp.o[0m
+[18.990s] [ 40%] [32m[1mLinking CXX executable chassis_control[0m
+[19.696s] [100%] Built target chassis_control
+[19.722s] Invoked command in '/home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/build/chassis_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/install/chassis_controller_channels:/home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/install/chassis_controller_test:/opt/ros/galactic /usr/bin/cmake --build /home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/build/chassis_controller -- -j4 -l4
+[19.754s] Invoking command in '/home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/build/chassis_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/install/chassis_controller_channels:/home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/install/chassis_controller_test:/opt/ros/galactic /usr/bin/cmake --install /home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/build/chassis_controller
+[19.775s] -- Install configuration: ""
+[19.776s] -- Installing: /home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/install/chassis_controller/lib/chassis_controller/chassis_control
+[19.783s] -- Set runtime path of "/home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/install/chassis_controller/lib/chassis_controller/chassis_control" to ""
+[19.784s] -- Up-to-date: /home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/install/chassis_controller/share/ament_index/resource_index/package_run_dependencies/chassis_controller
+[19.784s] -- Up-to-date: /home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/install/chassis_controller/share/ament_index/resource_index/parent_prefix_path/chassis_controller
+[19.784s] -- Up-to-date: /home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/install/chassis_controller/share/chassis_controller/environment/ament_prefix_path.sh
+[19.784s] -- Up-to-date: /home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/install/chassis_controller/share/chassis_controller/environment/ament_prefix_path.dsv
+[19.785s] -- Up-to-date: /home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/install/chassis_controller/share/chassis_controller/environment/path.sh
+[19.785s] -- Up-to-date: /home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/install/chassis_controller/share/chassis_controller/environment/path.dsv
+[19.785s] -- Up-to-date: /home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/install/chassis_controller/share/chassis_controller/local_setup.bash
+[19.785s] -- Up-to-date: /home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/install/chassis_controller/share/chassis_controller/local_setup.sh
+[19.786s] -- Up-to-date: /home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/install/chassis_controller/share/chassis_controller/local_setup.zsh
+[19.786s] -- Up-to-date: /home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/install/chassis_controller/share/chassis_controller/local_setup.dsv
+[19.786s] -- Installing: /home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/install/chassis_controller/share/chassis_controller/package.dsv
+[19.786s] -- Up-to-date: /home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/install/chassis_controller/share/ament_index/resource_index/packages/chassis_controller
+[19.786s] -- Up-to-date: /home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/install/chassis_controller/share/chassis_controller/cmake/chassis_controllerConfig.cmake
+[19.786s] -- Up-to-date: /home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/install/chassis_controller/share/chassis_controller/cmake/chassis_controllerConfig-version.cmake
+[19.787s] -- Up-to-date: /home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/install/chassis_controller/share/chassis_controller/package.xml
+[19.792s] Invoked command in '/home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/build/chassis_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/install/chassis_controller_channels:/home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/install/chassis_controller_test:/opt/ros/galactic /usr/bin/cmake --install /home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/build/chassis_controller

@@ -1,0 +1,21 @@
+[2.394s] Invoking command in '/home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/src/chassis_controller_channels': PYTHONPATH=/home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/build/chassis_controller_channels/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/install/chassis_controller_channels/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/chassis_controller_channels build --build-base /home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/build/chassis_controller_channels/build install --record /home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/build/chassis_controller_channels/install.log --single-version-externally-managed install_data
+[3.002s] running egg_info
+[3.003s] writing ../../build/chassis_controller_channels/chassis_controller_channels.egg-info/PKG-INFO
+[3.003s] writing dependency_links to ../../build/chassis_controller_channels/chassis_controller_channels.egg-info/dependency_links.txt
+[3.004s] writing entry points to ../../build/chassis_controller_channels/chassis_controller_channels.egg-info/entry_points.txt
+[3.004s] writing requirements to ../../build/chassis_controller_channels/chassis_controller_channels.egg-info/requires.txt
+[3.005s] writing top-level names to ../../build/chassis_controller_channels/chassis_controller_channels.egg-info/top_level.txt
+[3.088s] reading manifest file '../../build/chassis_controller_channels/chassis_controller_channels.egg-info/SOURCES.txt'
+[3.090s] writing manifest file '../../build/chassis_controller_channels/chassis_controller_channels.egg-info/SOURCES.txt'
+[3.091s] running build
+[3.091s] running build_py
+[3.092s] running install
+[3.094s] running install_lib
+[3.106s] running install_data
+[3.106s] running install_egg_info
+[3.106s] removing '/home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/install/chassis_controller_channels/lib/python3.8/site-packages/chassis_controller_channels-0.0.0-py3.8.egg-info' (and everything under it)
+[3.106s] Copying ../../build/chassis_controller_channels/chassis_controller_channels.egg-info to /home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/install/chassis_controller_channels/lib/python3.8/site-packages/chassis_controller_channels-0.0.0-py3.8.egg-info
+[3.107s] running install_scripts
+[3.154s] Installing velocity_publisher script to /home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/install/chassis_controller_channels/lib/chassis_controller_channels
+[3.155s] writing list of installed files to '/home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/build/chassis_controller_channels/install.log'
+[3.228s] Invoked command in '/home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/src/chassis_controller_channels' returned '0': PYTHONPATH=/home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/build/chassis_controller_channels/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/install/chassis_controller_channels/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/chassis_controller_channels build --build-base /home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/build/chassis_controller_channels/build install --record /home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/build/chassis_controller_channels/install.log --single-version-externally-managed install_data

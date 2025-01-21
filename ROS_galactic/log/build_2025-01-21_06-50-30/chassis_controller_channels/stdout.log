@@ -1,0 +1,22 @@
+running egg_info
+writing ../../build/chassis_controller_channels/chassis_controller_channels.egg-info/PKG-INFO
+writing dependency_links to ../../build/chassis_controller_channels/chassis_controller_channels.egg-info/dependency_links.txt
+writing entry points to ../../build/chassis_controller_channels/chassis_controller_channels.egg-info/entry_points.txt
+writing requirements to ../../build/chassis_controller_channels/chassis_controller_channels.egg-info/requires.txt
+writing top-level names to ../../build/chassis_controller_channels/chassis_controller_channels.egg-info/top_level.txt
+reading manifest file '../../build/chassis_controller_channels/chassis_controller_channels.egg-info/SOURCES.txt'
+writing manifest file '../../build/chassis_controller_channels/chassis_controller_channels.egg-info/SOURCES.txt'
+running build
+running build_py
+copying chassis_controller_channels/ui_publisher.py -> /home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/build/chassis_controller_channels/build/lib/chassis_controller_channels
+running install
+running install_lib
+copying /home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/build/chassis_controller_channels/build/lib/chassis_controller_channels/ui_publisher.py -> /home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/install/chassis_controller_channels/lib/python3.8/site-packages/chassis_controller_channels
+byte-compiling /home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/install/chassis_controller_channels/lib/python3.8/site-packages/chassis_controller_channels/ui_publisher.py to ui_publisher.cpython-38.pyc
+running install_data
+running install_egg_info
+removing '/home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/install/chassis_controller_channels/lib/python3.8/site-packages/chassis_controller_channels-0.0.0-py3.8.egg-info' (and everything under it)
+Copying ../../build/chassis_controller_channels/chassis_controller_channels.egg-info to /home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/install/chassis_controller_channels/lib/python3.8/site-packages/chassis_controller_channels-0.0.0-py3.8.egg-info
+running install_scripts
+Installing velocity_publisher script to /home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/install/chassis_controller_channels/lib/chassis_controller_channels
+writing list of installed files to '/home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/build/chassis_controller_channels/install.log'

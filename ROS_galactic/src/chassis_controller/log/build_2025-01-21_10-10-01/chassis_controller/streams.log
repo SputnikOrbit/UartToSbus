@@ -1,0 +1,36 @@
+[0.006s] Invoking command in '/home/sputnik/Voloneiz/UartToSbus/ROS_humble/src/chassis_controller/build/chassis_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/sputnik/Voloneiz/UartToSbus/ROS_humble/src/chassis_controller/build/chassis_controller -- -j20 -l20
+[0.035s] [35m[1mConsolidate compiler generated dependencies of target chassis_controll[0m
+[0.046s] [ 50%] [32mBuilding CXX object CMakeFiles/chassis_controll.dir/src/chassis_controller.cpp.o[0m
+[1.698s] In file included from [01m[K/usr/include/c++/11/pstl/glue_algorithm_defs.h:13[m[K,
+[1.698s]                  from [01m[K/usr/include/c++/11/algorithm:74[m[K,
+[1.698s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:18[m[K,
+[1.698s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[1.698s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[1.698s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[1.698s]                  from [01m[K/home/sputnik/Voloneiz/UartToSbus/ROS_humble/src/chassis_controller/src/chassis_controller.cpp:4[m[K:
+[1.698s] /usr/include/c++/11/functional: In instantiation of ‘[01m[Kstruct std::_Bind_check_arity<void (ChassisController::*)(), ChassisController*, const std::_Placeholder<1>&>[m[K’:
+[1.699s] [01m[K/usr/include/c++/11/functional:768:12:[m[K   required from ‘[01m[Kstruct std::_Bind_helper<false, void (ChassisController::*)(), ChassisController*, const std::_Placeholder<1>&>[m[K’
+[1.699s] [01m[K/usr/include/c++/11/functional:789:5:[m[K   required by substitution of ‘[01m[Ktemplate<class _Func, class ... _BoundArgs> typename std::_Bind_helper<std::__is_socketlike<_Func>::value, _Func, _BoundArgs ...>::type std::bind(_Func&&, _BoundArgs&& ...) [with _Func = void (ChassisController::*)(); _BoundArgs = {ChassisController*, const std::_Placeholder<1>&}][m[K’
+[1.699s] [01m[K/home/sputnik/Voloneiz/UartToSbus/ROS_humble/src/chassis_controller/src/chassis_controller.cpp:29:49:[m[K   required from here
+[1.699s] [01m[K/usr/include/c++/11/functional:756:21:[m[K [01;31m[Kerror: [m[Kstatic assertion failed: Wrong number of arguments for pointer-to-member
+[1.699s]   755 |       static_assert(_Varargs::[01;31m[Kvalue[m[K
+[1.699s]       |                               [01;31m[K~~~~~[m[K
+[1.699s]   756 | [01;31m[K                    ? sizeof...(_BoundArgs) >= _Arity::value + 1[m[K
+[1.699s]       |                     [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.699s]   757 | [01;31m[K                    : sizeof...(_BoundArgs) == _Arity::value + 1[m[K,
+[1.699s]       |                     [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.699s] [01m[K/usr/include/c++/11/functional:756:21:[m[K [01;36m[Knote: [m[K‘[01m[K(false ? (2 >= (((long unsigned int)std::integral_constant<long unsigned int, 0>::value) + 1)) : (2 == (((long unsigned int)std::integral_constant<long unsigned int, 0>::value) + 1)))[m[K’ evaluates to false
+[1.699s] [01m[K/home/sputnik/Voloneiz/UartToSbus/ROS_humble/src/chassis_controller/src/chassis_controller.cpp:[m[K In constructor ‘[01m[KChassisController::ChassisController()[m[K’:
+[1.699s] [01m[K/home/sputnik/Voloneiz/UartToSbus/ROS_humble/src/chassis_controller/src/chassis_controller.cpp:29:106:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K;[m[K’ token
+[1.699s]    29 |                 "motion_commands", 10, std::bind(&ChassisController::chassis_controll_callback, this, _1)[01;31m[K;[m[K)
+[1.699s]       |                                                                                                          [01;31m[K^[m[K
+[1.700s] [01m[K/home/sputnik/Voloneiz/UartToSbus/ROS_humble/src/chassis_controller/src/chassis_controller.cpp:28:81:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K([m[K’
+[1.700s]    28 |             motion_commander_ = this->create_subscription<std_msgs::msg::String>[01;36m[K([m[K
+[1.700s]       |                                                                                 [01;36m[K^[m[K
+[1.700s] [01m[K/home/sputnik/Voloneiz/UartToSbus/ROS_humble/src/chassis_controller/src/chassis_controller.cpp:29:107:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K)[m[K’ token
+[1.700s]    29 |                 "motion_commands", 10, std::bind(&ChassisController::chassis_controll_callback, this, _1);[01;31m[K)[m[K
+[1.700s]       |                                                                                                           [01;31m[K^[m[K
+[1.700s] gmake[2]: *** [CMakeFiles/chassis_controll.dir/build.make:76: CMakeFiles/chassis_controll.dir/src/chassis_controller.cpp.o] Error 1
+[1.700s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/chassis_controll.dir/all] Error 2
+[1.700s] gmake: *** [Makefile:146: all] Error 2
+[1.701s] Invoked command in '/home/sputnik/Voloneiz/UartToSbus/ROS_humble/src/chassis_controller/build/chassis_controller' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/sputnik/Voloneiz/UartToSbus/ROS_humble/src/chassis_controller/build/chassis_controller -- -j20 -l20

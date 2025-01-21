@@ -1,0 +1,22 @@
+running egg_info
+writing ../../build/chassis_controller_test/chassis_controller_test.egg-info/PKG-INFO
+writing dependency_links to ../../build/chassis_controller_test/chassis_controller_test.egg-info/dependency_links.txt
+writing entry points to ../../build/chassis_controller_test/chassis_controller_test.egg-info/entry_points.txt
+writing requirements to ../../build/chassis_controller_test/chassis_controller_test.egg-info/requires.txt
+writing top-level names to ../../build/chassis_controller_test/chassis_controller_test.egg-info/top_level.txt
+reading manifest file '../../build/chassis_controller_test/chassis_controller_test.egg-info/SOURCES.txt'
+writing manifest file '../../build/chassis_controller_test/chassis_controller_test.egg-info/SOURCES.txt'
+running build
+running build_py
+copying chassis_controller_test/velocity_publisher.py -> /home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/build/chassis_controller_test/build/lib/chassis_controller_test
+running install
+running install_lib
+copying /home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/build/chassis_controller_test/build/lib/chassis_controller_test/velocity_publisher.py -> /home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/install/chassis_controller_test/lib/python3.8/site-packages/chassis_controller_test
+byte-compiling /home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/install/chassis_controller_test/lib/python3.8/site-packages/chassis_controller_test/velocity_publisher.py to velocity_publisher.cpython-38.pyc
+running install_data
+running install_egg_info
+removing '/home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/install/chassis_controller_test/lib/python3.8/site-packages/chassis_controller_test-0.0.0-py3.8.egg-info' (and everything under it)
+Copying ../../build/chassis_controller_test/chassis_controller_test.egg-info to /home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/install/chassis_controller_test/lib/python3.8/site-packages/chassis_controller_test-0.0.0-py3.8.egg-info
+running install_scripts
+Installing velocity_publisher script to /home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/install/chassis_controller_test/lib/chassis_controller_test
+writing list of installed files to '/home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/build/chassis_controller_test/install.log'

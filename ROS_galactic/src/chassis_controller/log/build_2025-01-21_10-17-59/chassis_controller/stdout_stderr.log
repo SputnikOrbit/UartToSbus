@@ -1,0 +1,21 @@
+[35m[1mConsolidate compiler generated dependencies of target chassis_controll[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/chassis_controll.dir/src/chassis_controller.cpp.o[0m
+[01m[K/home/sputnik/Voloneiz/UartToSbus/ROS_humble/src/chassis_controller/src/chassis_controller.cpp:[m[K In member function ‘[01m[Kvoid ChassisController::chassis_controll_callback(std_msgs::msg::String_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/sputnik/Voloneiz/UartToSbus/ROS_humble/src/chassis_controller/src/chassis_controller.cpp:45:79:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmsg[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+   45 |         void chassis_controll_callback([01;35m[Kconst std_msgs::msg::String::SharedPtr msg[m[K){
+      |                                        [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[100%] [32m[1mLinking CXX executable chassis_controll[0m
+/usr/bin/ld: CMakeFiles/chassis_controll.dir/src/chassis_controller.cpp.o: in function `ChassisController::ChassisController()':
+chassis_controller.cpp:(.text._ZN17ChassisControllerC2Ev[_ZN17ChassisControllerC5Ev]+0x1f4): undefined reference to `serial::Serial::Serial(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, unsigned int, serial::Timeout, serial::bytesize_t, serial::parity_t, serial::stopbits_t, serial::flowcontrol_t)'
+/usr/bin/ld: chassis_controller.cpp:(.text._ZN17ChassisControllerC2Ev[_ZN17ChassisControllerC5Ev]+0x23f): undefined reference to `serial::Serial::open()'
+/usr/bin/ld: chassis_controller.cpp:(.text._ZN17ChassisControllerC2Ev[_ZN17ChassisControllerC5Ev]+0x84d): undefined reference to `serial::Serial::~Serial()'
+/usr/bin/ld: CMakeFiles/chassis_controll.dir/src/chassis_controller.cpp.o: in function `ChassisController::uart_init()':
+chassis_controller.cpp:(.text._ZN17ChassisController9uart_initEv[_ZN17ChassisController9uart_initEv]+0x5c): undefined reference to `serial::Serial::setPort(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+/usr/bin/ld: chassis_controller.cpp:(.text._ZN17ChassisController9uart_initEv[_ZN17ChassisController9uart_initEv]+0x8b): undefined reference to `serial::Serial::setBaudrate(unsigned int)'
+/usr/bin/ld: chassis_controller.cpp:(.text._ZN17ChassisController9uart_initEv[_ZN17ChassisController9uart_initEv]+0xb6): undefined reference to `serial::Serial::setTimeout(serial::Timeout&)'
+/usr/bin/ld: CMakeFiles/chassis_controll.dir/src/chassis_controller.cpp.o: in function `ChassisController::~ChassisController()':
+chassis_controller.cpp:(.text._ZN17ChassisControllerD2Ev[_ZN17ChassisControllerD5Ev]+0x2c): undefined reference to `serial::Serial::~Serial()'
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [CMakeFiles/chassis_controll.dir/build.make:159: chassis_controll] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/chassis_controll.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

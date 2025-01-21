@@ -1,0 +1,278 @@
+[0.000000] (-) TimerEvent: {}
+[0.000448] (chassis_controller) JobQueued: {'identifier': 'chassis_controller', 'dependencies': OrderedDict()}
+[0.000757] (chassis_controller_channels) JobQueued: {'identifier': 'chassis_controller_channels', 'dependencies': OrderedDict()}
+[0.001444] (chassis_controller_test) JobQueued: {'identifier': 'chassis_controller_test', 'dependencies': OrderedDict()}
+[0.001774] (chassis_controller) JobStarted: {'identifier': 'chassis_controller'}
+[0.019545] (chassis_controller_channels) JobStarted: {'identifier': 'chassis_controller_channels'}
+[0.042643] (chassis_controller_test) JobStarted: {'identifier': 'chassis_controller_test'}
+[0.067561] (chassis_controller) JobProgress: {'identifier': 'chassis_controller', 'progress': 'cmake'}
+[0.069451] (chassis_controller) JobProgress: {'identifier': 'chassis_controller', 'progress': 'build'}
+[0.071774] (chassis_controller) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/build/chassis_controller', '--', '-j4', '-l4'], 'cwd': '/home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/build/chassis_controller', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'robot11'), ('SSH_AGENT_PID', '2180'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/aarch64-linux-gnu:/opt/ros/galactic/lib'), ('HOME', '/home/robot11'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1386'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1001/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3043'), ('IM_CONFIG_PHASE', '1'), ('https_proxy', 'http://127.0.0.1:7890'), ('COLCON_PREFIX_PATH', '/home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/install'), ('ROS_DISTRO', 'galactic'), ('LOGNAME', 'robot11'), ('http_proxy', 'http://127.0.0.1:7890'), ('JOURNAL_STREAM', '7:58788'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'robot11'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/galactic/bin:/home/robot11/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/2215,unix/ubuntu:/tmp/.ICE-unix/2215'), ('INVOCATION_ID', '57830d348ac744289bd8c746ab985e54'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1001'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1001/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1001/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/install/chassis_controller_channels:/home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/install/chassis_controller_test:/home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/install/chassis_controller:/opt/ros/galactic'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:2afeeaee-fa8d-4e25-b9e9-074e9a21ae86'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1001/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/build/chassis_controller'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/install/chassis_controller_channels/lib/python3.8/site-packages:/home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/install/chassis_controller_test/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/install/chassis_controller:/home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/install/chassis_controller_channels:/home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/install/chassis_controller_test:/opt/ros/galactic')]), 'shell': False}
+[0.099454] (-) TimerEvent: {}
+[0.200281] (-) TimerEvent: {}
+[0.300923] (-) TimerEvent: {}
+[0.401602] (-) TimerEvent: {}
+[0.502886] (-) TimerEvent: {}
+[0.603562] (-) TimerEvent: {}
+[0.699400] (chassis_controller) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target chassis_control\x1b[0m\n'}
+[0.700145] (chassis_controller) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/chassis_control.dir/src/chassis_controller.cpp.o\x1b[0m\n'}
+[0.703746] (-) TimerEvent: {}
+[0.804653] (-) TimerEvent: {}
+[0.905384] (-) TimerEvent: {}
+[1.006147] (-) TimerEvent: {}
+[1.107000] (-) TimerEvent: {}
+[1.207682] (-) TimerEvent: {}
+[1.308660] (-) TimerEvent: {}
+[1.409941] (-) TimerEvent: {}
+[1.515776] (-) TimerEvent: {}
+[1.616482] (-) TimerEvent: {}
+[1.717331] (-) TimerEvent: {}
+[1.818023] (-) TimerEvent: {}
+[1.918777] (-) TimerEvent: {}
+[2.019466] (-) TimerEvent: {}
+[2.120205] (-) TimerEvent: {}
+[2.221333] (-) TimerEvent: {}
+[2.322413] (-) TimerEvent: {}
+[2.412358] (chassis_controller_channels) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/chassis_controller_channels', 'build', '--build-base', '/home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/build/chassis_controller_channels/build', 'install', '--record', '/home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/build/chassis_controller_channels/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/src/chassis_controller_channels', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'robot11', 'SSH_AGENT_PID': '2180', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/aarch64-linux-gnu:/opt/ros/galactic/lib', 'HOME': '/home/robot11', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'MANAGERPID': '1386', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1001/bus', 'COLORTERM': 'truecolor', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '3043', 'IM_CONFIG_PHASE': '1', 'https_proxy': 'http://127.0.0.1:7890', 'COLCON_PREFIX_PATH': '/home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/install', 'ROS_DISTRO': 'galactic', 'LOGNAME': 'robot11', 'http_proxy': 'http://127.0.0.1:7890', 'JOURNAL_STREAM': '7:58788', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'robot11', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/opt/ros/galactic/bin:/home/robot11/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'SESSION_MANAGER': 'local/ubuntu:@/tmp/.ICE-unix/2215,unix/ubuntu:/tmp/.ICE-unix/2215', 'INVOCATION_ID': '57830d348ac744289bd8c746ab985e54', 'XDG_MENU_PREFIX': 'gnome-', 'XDG_RUNTIME_DIR': '/run/user/1001', 'DISPLAY': ':0', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1001/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'SSH_AUTH_SOCK': '/run/user/1001/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/install/chassis_controller_channels:/home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/install/chassis_controller_test:/home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/install/chassis_controller:/opt/ros/galactic', 'SHELL': '/bin/bash', 'TERMINATOR_UUID': 'urn:uuid:2afeeaee-fa8d-4e25-b9e9-074e9a21ae86', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1001/gnupg/S.gpg-agent:0:1', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/build/chassis_controller_channels', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/build/chassis_controller_channels/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/install/chassis_controller_channels/lib/python3.8/site-packages:/home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/install/chassis_controller_channels/lib/python3.8/site-packages:/home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/install/chassis_controller_test/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages', 'COLCON': '1', 'VTE_VERSION': '6003', 'CMAKE_PREFIX_PATH': '/home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/install/chassis_controller'}, 'shell': False}
+[2.422647] (-) TimerEvent: {}
+[2.438305] (chassis_controller_test) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/chassis_controller_test', 'build', '--build-base', '/home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/build/chassis_controller_test/build', 'install', '--record', '/home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/build/chassis_controller_test/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/src/chassis_controller_test', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'robot11', 'SSH_AGENT_PID': '2180', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/aarch64-linux-gnu:/opt/ros/galactic/lib', 'HOME': '/home/robot11', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'MANAGERPID': '1386', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1001/bus', 'COLORTERM': 'truecolor', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '3043', 'IM_CONFIG_PHASE': '1', 'https_proxy': 'http://127.0.0.1:7890', 'COLCON_PREFIX_PATH': '/home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/install', 'ROS_DISTRO': 'galactic', 'LOGNAME': 'robot11', 'http_proxy': 'http://127.0.0.1:7890', 'JOURNAL_STREAM': '7:58788', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'robot11', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/opt/ros/galactic/bin:/home/robot11/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'SESSION_MANAGER': 'local/ubuntu:@/tmp/.ICE-unix/2215,unix/ubuntu:/tmp/.ICE-unix/2215', 'INVOCATION_ID': '57830d348ac744289bd8c746ab985e54', 'XDG_MENU_PREFIX': 'gnome-', 'XDG_RUNTIME_DIR': '/run/user/1001', 'DISPLAY': ':0', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1001/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'SSH_AUTH_SOCK': '/run/user/1001/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/install/chassis_controller_channels:/home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/install/chassis_controller_test:/home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/install/chassis_controller:/opt/ros/galactic', 'SHELL': '/bin/bash', 'TERMINATOR_UUID': 'urn:uuid:2afeeaee-fa8d-4e25-b9e9-074e9a21ae86', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1001/gnupg/S.gpg-agent:0:1', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/build/chassis_controller_test', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/build/chassis_controller_test/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/install/chassis_controller_test/lib/python3.8/site-packages:/home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/install/chassis_controller_channels/lib/python3.8/site-packages:/home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/install/chassis_controller_test/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages', 'COLCON': '1', 'VTE_VERSION': '6003', 'CMAKE_PREFIX_PATH': '/home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/install/chassis_controller'}, 'shell': False}
+[2.522858] (-) TimerEvent: {}
+[2.625354] (-) TimerEvent: {}
+[2.726260] (-) TimerEvent: {}
+[2.827169] (-) TimerEvent: {}
+[2.929262] (-) TimerEvent: {}
+[3.021006] (chassis_controller_channels) StdoutLine: {'line': b'running egg_info\n'}
+[3.022638] (chassis_controller_channels) StdoutLine: {'line': b'writing ../../build/chassis_controller_channels/chassis_controller_channels.egg-info/PKG-INFO\n'}
+[3.023367] (chassis_controller_channels) StdoutLine: {'line': b'writing dependency_links to ../../build/chassis_controller_channels/chassis_controller_channels.egg-info/dependency_links.txt\n'}
+[3.023849] (chassis_controller_channels) StdoutLine: {'line': b'writing entry points to ../../build/chassis_controller_channels/chassis_controller_channels.egg-info/entry_points.txt\n'}
+[3.024237] (chassis_controller_channels) StdoutLine: {'line': b'writing requirements to ../../build/chassis_controller_channels/chassis_controller_channels.egg-info/requires.txt\n'}
+[3.024809] (chassis_controller_channels) StdoutLine: {'line': b'writing top-level names to ../../build/chassis_controller_channels/chassis_controller_channels.egg-info/top_level.txt\n'}
+[3.029365] (-) TimerEvent: {}
+[3.082627] (chassis_controller_test) StdoutLine: {'line': b'running egg_info\n'}
+[3.084434] (chassis_controller_test) StdoutLine: {'line': b'writing ../../build/chassis_controller_test/chassis_controller_test.egg-info/PKG-INFO\n'}
+[3.085295] (chassis_controller_test) StdoutLine: {'line': b'writing dependency_links to ../../build/chassis_controller_test/chassis_controller_test.egg-info/dependency_links.txt\n'}
+[3.085886] (chassis_controller_test) StdoutLine: {'line': b'writing entry points to ../../build/chassis_controller_test/chassis_controller_test.egg-info/entry_points.txt\n'}
+[3.086209] (chassis_controller_test) StdoutLine: {'line': b'writing requirements to ../../build/chassis_controller_test/chassis_controller_test.egg-info/requires.txt\n'}
+[3.087050] (chassis_controller_test) StdoutLine: {'line': b'writing top-level names to ../../build/chassis_controller_test/chassis_controller_test.egg-info/top_level.txt\n'}
+[3.107967] (chassis_controller_channels) StdoutLine: {'line': b"reading manifest file '../../build/chassis_controller_channels/chassis_controller_channels.egg-info/SOURCES.txt'\n"}
+[3.110322] (chassis_controller_channels) StdoutLine: {'line': b"writing manifest file '../../build/chassis_controller_channels/chassis_controller_channels.egg-info/SOURCES.txt'\n"}
+[3.110888] (chassis_controller_channels) StdoutLine: {'line': b'running build\n'}
+[3.111142] (chassis_controller_channels) StdoutLine: {'line': b'running build_py\n'}
+[3.111609] (chassis_controller_channels) StdoutLine: {'line': b'running install\n'}
+[3.113806] (chassis_controller_channels) StdoutLine: {'line': b'running install_lib\n'}
+[3.125320] (chassis_controller_channels) StdoutLine: {'line': b'running install_data\n'}
+[3.125814] (chassis_controller_channels) StdoutLine: {'line': b'running install_egg_info\n'}
+[3.126028] (chassis_controller_channels) StdoutLine: {'line': b"removing '/home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/install/chassis_controller_channels/lib/python3.8/site-packages/chassis_controller_channels-0.0.0-py3.8.egg-info' (and everything under it)\n"}
+[3.126465] (chassis_controller_channels) StdoutLine: {'line': b'Copying ../../build/chassis_controller_channels/chassis_controller_channels.egg-info to /home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/install/chassis_controller_channels/lib/python3.8/site-packages/chassis_controller_channels-0.0.0-py3.8.egg-info\n'}
+[3.127122] (chassis_controller_channels) StdoutLine: {'line': b'running install_scripts\n'}
+[3.129457] (-) TimerEvent: {}
+[3.173329] (chassis_controller_test) StdoutLine: {'line': b"reading manifest file '../../build/chassis_controller_test/chassis_controller_test.egg-info/SOURCES.txt'\n"}
+[3.173986] (chassis_controller_channels) StdoutLine: {'line': b'Installing velocity_publisher script to /home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/install/chassis_controller_channels/lib/chassis_controller_channels\n'}
+[3.175012] (chassis_controller_channels) StdoutLine: {'line': b"writing list of installed files to '/home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/build/chassis_controller_channels/install.log'\n"}
+[3.175709] (chassis_controller_test) StdoutLine: {'line': b"writing manifest file '../../build/chassis_controller_test/chassis_controller_test.egg-info/SOURCES.txt'\n"}
+[3.176109] (chassis_controller_test) StdoutLine: {'line': b'running build\n'}
+[3.176311] (chassis_controller_test) StdoutLine: {'line': b'running build_py\n'}
+[3.176820] (chassis_controller_test) StdoutLine: {'line': b'running install\n'}
+[3.179134] (chassis_controller_test) StdoutLine: {'line': b'running install_lib\n'}
+[3.183592] (chassis_controller_test) StdoutLine: {'line': b'running install_data\n'}
+[3.184019] (chassis_controller_test) StdoutLine: {'line': b'running install_egg_info\n'}
+[3.189002] (chassis_controller_test) StdoutLine: {'line': b"removing '/home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/install/chassis_controller_test/lib/python3.8/site-packages/chassis_controller_test-0.0.0-py3.8.egg-info' (and everything under it)\n"}
+[3.189942] (chassis_controller_test) StdoutLine: {'line': b'Copying ../../build/chassis_controller_test/chassis_controller_test.egg-info to /home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/install/chassis_controller_test/lib/python3.8/site-packages/chassis_controller_test-0.0.0-py3.8.egg-info\n'}
+[3.192558] (chassis_controller_test) StdoutLine: {'line': b'running install_scripts\n'}
+[3.229639] (-) TimerEvent: {}
+[3.242826] (chassis_controller_test) StdoutLine: {'line': b'Installing velocity_publisher script to /home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/install/chassis_controller_test/lib/chassis_controller_test\n'}
+[3.243949] (chassis_controller_test) StdoutLine: {'line': b"writing list of installed files to '/home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/build/chassis_controller_test/install.log'\n"}
+[3.247652] (chassis_controller_channels) CommandEnded: {'returncode': 0}
+[3.281264] (chassis_controller_channels) JobEnded: {'identifier': 'chassis_controller_channels', 'rc': 0}
+[3.320207] (chassis_controller_test) CommandEnded: {'returncode': 0}
+[3.329928] (-) TimerEvent: {}
+[3.336991] (chassis_controller_test) JobEnded: {'identifier': 'chassis_controller_test', 'rc': 0}
+[3.430108] (-) TimerEvent: {}
+[3.530811] (-) TimerEvent: {}
+[3.631509] (-) TimerEvent: {}
+[3.732172] (-) TimerEvent: {}
+[3.832836] (-) TimerEvent: {}
+[3.933536] (-) TimerEvent: {}
+[4.034202] (-) TimerEvent: {}
+[4.134891] (-) TimerEvent: {}
+[4.235643] (-) TimerEvent: {}
+[4.336382] (-) TimerEvent: {}
+[4.437976] (-) TimerEvent: {}
+[4.538676] (-) TimerEvent: {}
+[4.639602] (-) TimerEvent: {}
+[4.740308] (-) TimerEvent: {}
+[4.841023] (-) TimerEvent: {}
+[4.941783] (-) TimerEvent: {}
+[5.042514] (-) TimerEvent: {}
+[5.143218] (-) TimerEvent: {}
+[5.243903] (-) TimerEvent: {}
+[5.344612] (-) TimerEvent: {}
+[5.445312] (-) TimerEvent: {}
+[5.545971] (-) TimerEvent: {}
+[5.646654] (-) TimerEvent: {}
+[5.747308] (-) TimerEvent: {}
+[5.848002] (-) TimerEvent: {}
+[5.948717] (-) TimerEvent: {}
+[6.049505] (-) TimerEvent: {}
+[6.150239] (-) TimerEvent: {}
+[6.250989] (-) TimerEvent: {}
+[6.351744] (-) TimerEvent: {}
+[6.452452] (-) TimerEvent: {}
+[6.553129] (-) TimerEvent: {}
+[6.653875] (-) TimerEvent: {}
+[6.754572] (-) TimerEvent: {}
+[6.855276] (-) TimerEvent: {}
+[6.955968] (-) TimerEvent: {}
+[7.056635] (-) TimerEvent: {}
+[7.157311] (-) TimerEvent: {}
+[7.257948] (-) TimerEvent: {}
+[7.358579] (-) TimerEvent: {}
+[7.459230] (-) TimerEvent: {}
+[7.559892] (-) TimerEvent: {}
+[7.660635] (-) TimerEvent: {}
+[7.761378] (-) TimerEvent: {}
+[7.862093] (-) TimerEvent: {}
+[7.962822] (-) TimerEvent: {}
+[8.063558] (-) TimerEvent: {}
+[8.165003] (-) TimerEvent: {}
+[8.265752] (-) TimerEvent: {}
+[8.366463] (-) TimerEvent: {}
+[8.467163] (-) TimerEvent: {}
+[8.567827] (-) TimerEvent: {}
+[8.668528] (-) TimerEvent: {}
+[8.769172] (-) TimerEvent: {}
+[8.869856] (-) TimerEvent: {}
+[8.970483] (-) TimerEvent: {}
+[9.071154] (-) TimerEvent: {}
+[9.171911] (-) TimerEvent: {}
+[9.272653] (-) TimerEvent: {}
+[9.373369] (-) TimerEvent: {}
+[9.474062] (-) TimerEvent: {}
+[9.574781] (-) TimerEvent: {}
+[9.675483] (-) TimerEvent: {}
+[9.776184] (-) TimerEvent: {}
+[9.876864] (-) TimerEvent: {}
+[9.977621] (-) TimerEvent: {}
+[10.078321] (-) TimerEvent: {}
+[10.179027] (-) TimerEvent: {}
+[10.279733] (-) TimerEvent: {}
+[10.380403] (-) TimerEvent: {}
+[10.481090] (-) TimerEvent: {}
+[10.581740] (-) TimerEvent: {}
+[10.682411] (-) TimerEvent: {}
+[10.783149] (-) TimerEvent: {}
+[10.883878] (-) TimerEvent: {}
+[10.984591] (-) TimerEvent: {}
+[11.085348] (-) TimerEvent: {}
+[11.186077] (-) TimerEvent: {}
+[11.286792] (-) TimerEvent: {}
+[11.387498] (-) TimerEvent: {}
+[11.488178] (-) TimerEvent: {}
+[11.588885] (-) TimerEvent: {}
+[11.689605] (-) TimerEvent: {}
+[11.790290] (-) TimerEvent: {}
+[11.890947] (-) TimerEvent: {}
+[11.991606] (-) TimerEvent: {}
+[12.092297] (-) TimerEvent: {}
+[12.193004] (-) TimerEvent: {}
+[12.293730] (-) TimerEvent: {}
+[12.394411] (-) TimerEvent: {}
+[12.495058] (-) TimerEvent: {}
+[12.595723] (-) TimerEvent: {}
+[12.696407] (-) TimerEvent: {}
+[12.797081] (-) TimerEvent: {}
+[12.897797] (-) TimerEvent: {}
+[12.998484] (-) TimerEvent: {}
+[13.099175] (-) TimerEvent: {}
+[13.199856] (-) TimerEvent: {}
+[13.300498] (-) TimerEvent: {}
+[13.401116] (-) TimerEvent: {}
+[13.501764] (-) TimerEvent: {}
+[13.602410] (-) TimerEvent: {}
+[13.703054] (-) TimerEvent: {}
+[13.803844] (-) TimerEvent: {}
+[13.904511] (-) TimerEvent: {}
+[14.005238] (-) TimerEvent: {}
+[14.105915] (-) TimerEvent: {}
+[14.206591] (-) TimerEvent: {}
+[14.307260] (-) TimerEvent: {}
+[14.407890] (-) TimerEvent: {}
+[14.508540] (-) TimerEvent: {}
+[14.609236] (-) TimerEvent: {}
+[14.709875] (-) TimerEvent: {}
+[14.810501] (-) TimerEvent: {}
+[14.911134] (-) TimerEvent: {}
+[15.011750] (-) TimerEvent: {}
+[15.112364] (-) TimerEvent: {}
+[15.212995] (-) TimerEvent: {}
+[15.313633] (-) TimerEvent: {}
+[15.414288] (-) TimerEvent: {}
+[15.514951] (-) TimerEvent: {}
+[15.615654] (-) TimerEvent: {}
+[15.716331] (-) TimerEvent: {}
+[15.817006] (-) TimerEvent: {}
+[15.917708] (-) TimerEvent: {}
+[16.018378] (-) TimerEvent: {}
+[16.119053] (-) TimerEvent: {}
+[16.219730] (-) TimerEvent: {}
+[16.320396] (-) TimerEvent: {}
+[16.421047] (-) TimerEvent: {}
+[16.521720] (-) TimerEvent: {}
+[16.622827] (-) TimerEvent: {}
+[16.723445] (-) TimerEvent: {}
+[16.824068] (-) TimerEvent: {}
+[16.924687] (-) TimerEvent: {}
+[17.025345] (-) TimerEvent: {}
+[17.126037] (-) TimerEvent: {}
+[17.226744] (-) TimerEvent: {}
+[17.327418] (-) TimerEvent: {}
+[17.428096] (-) TimerEvent: {}
+[17.528749] (-) TimerEvent: {}
+[17.629480] (-) TimerEvent: {}
+[17.730172] (-) TimerEvent: {}
+[17.830835] (-) TimerEvent: {}
+[17.931478] (-) TimerEvent: {}
+[18.032127] (-) TimerEvent: {}
+[18.132800] (-) TimerEvent: {}
+[18.233471] (-) TimerEvent: {}
+[18.334122] (-) TimerEvent: {}
+[18.434736] (-) TimerEvent: {}
+[18.535373] (-) TimerEvent: {}
+[18.636028] (-) TimerEvent: {}
+[18.736721] (-) TimerEvent: {}
+[18.837420] (-) TimerEvent: {}
+[18.892582] (chassis_controller) StdoutLine: {'line': b'[ 40%] \x1b[32m\x1b[1mLinking CXX executable chassis_control\x1b[0m\n'}
+[18.937609] (-) TimerEvent: {}
+[19.038328] (-) TimerEvent: {}
+[19.139068] (-) TimerEvent: {}
+[19.239797] (-) TimerEvent: {}
+[19.340527] (-) TimerEvent: {}
+[19.441219] (-) TimerEvent: {}
+[19.541924] (-) TimerEvent: {}
+[19.630606] (chassis_controller) StdoutLine: {'line': b'[100%] Built target chassis_control\n'}
+[19.642086] (-) TimerEvent: {}
+[19.656687] (chassis_controller) CommandEnded: {'returncode': 0}
+[19.659090] (chassis_controller) JobProgress: {'identifier': 'chassis_controller', 'progress': 'install'}
+[19.685791] (chassis_controller) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/build/chassis_controller'], 'cwd': '/home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/build/chassis_controller', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'robot11'), ('SSH_AGENT_PID', '2180'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/aarch64-linux-gnu:/opt/ros/galactic/lib'), ('HOME', '/home/robot11'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1386'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1001/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3043'), ('IM_CONFIG_PHASE', '1'), ('https_proxy', 'http://127.0.0.1:7890'), ('COLCON_PREFIX_PATH', '/home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/install'), ('ROS_DISTRO', 'galactic'), ('LOGNAME', 'robot11'), ('http_proxy', 'http://127.0.0.1:7890'), ('JOURNAL_STREAM', '7:58788'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'robot11'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/galactic/bin:/home/robot11/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/2215,unix/ubuntu:/tmp/.ICE-unix/2215'), ('INVOCATION_ID', '57830d348ac744289bd8c746ab985e54'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1001'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1001/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1001/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/install/chassis_controller_channels:/home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/install/chassis_controller_test:/home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/install/chassis_controller:/opt/ros/galactic'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:2afeeaee-fa8d-4e25-b9e9-074e9a21ae86'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1001/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/build/chassis_controller'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/install/chassis_controller_channels/lib/python3.8/site-packages:/home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/install/chassis_controller_test/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/install/chassis_controller:/home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/install/chassis_controller_channels:/home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/install/chassis_controller_test:/opt/ros/galactic')]), 'shell': False}
+[19.710555] (chassis_controller) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[19.711185] (chassis_controller) StdoutLine: {'line': b'-- Installing: /home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/install/chassis_controller/lib/chassis_controller/chassis_control\n'}
+[19.717923] (chassis_controller) StdoutLine: {'line': b'-- Set runtime path of "/home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/install/chassis_controller/lib/chassis_controller/chassis_control" to ""\n'}
+[19.718498] (chassis_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/install/chassis_controller/share/ament_index/resource_index/package_run_dependencies/chassis_controller\n'}
+[19.718797] (chassis_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/install/chassis_controller/share/ament_index/resource_index/parent_prefix_path/chassis_controller\n'}
+[19.719054] (chassis_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/install/chassis_controller/share/chassis_controller/environment/ament_prefix_path.sh\n'}
+[19.719299] (chassis_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/install/chassis_controller/share/chassis_controller/environment/ament_prefix_path.dsv\n'}
+[19.719527] (chassis_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/install/chassis_controller/share/chassis_controller/environment/path.sh\n'}
+[19.719762] (chassis_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/install/chassis_controller/share/chassis_controller/environment/path.dsv\n'}
+[19.719928] (chassis_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/install/chassis_controller/share/chassis_controller/local_setup.bash\n'}
+[19.720178] (chassis_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/install/chassis_controller/share/chassis_controller/local_setup.sh\n'}
+[19.720412] (chassis_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/install/chassis_controller/share/chassis_controller/local_setup.zsh\n'}
+[19.720608] (chassis_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/install/chassis_controller/share/chassis_controller/local_setup.dsv\n'}
+[19.720765] (chassis_controller) StdoutLine: {'line': b'-- Installing: /home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/install/chassis_controller/share/chassis_controller/package.dsv\n'}
+[19.720916] (chassis_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/install/chassis_controller/share/ament_index/resource_index/packages/chassis_controller\n'}
+[19.721063] (chassis_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/install/chassis_controller/share/chassis_controller/cmake/chassis_controllerConfig.cmake\n'}
+[19.721235] (chassis_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/install/chassis_controller/share/chassis_controller/cmake/chassis_controllerConfig-version.cmake\n'}
+[19.721418] (chassis_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robot11/theseus_mecanum/UartToSbus/ROS_galactic/install/chassis_controller/share/chassis_controller/package.xml\n'}
+[19.725089] (chassis_controller) CommandEnded: {'returncode': 0}
+[19.742450] (-) TimerEvent: {}
+[19.768015] (chassis_controller) JobEnded: {'identifier': 'chassis_controller', 'rc': 0}
+[19.770310] (-) EventReactorShutdown: {}

@@ -1,0 +1,22 @@
+[0.006s] Invoking command in '/home/sputnik/Voloneiz/UartToSbus/ROS_humble/src/chassis_controller/build/chassis_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/sputnik/Voloneiz/UartToSbus/ROS_humble/src/chassis_controller/build/chassis_controller -- -j20 -l20
+[0.020s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.097s] -- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)
+[0.112s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.114s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.117s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.121s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.128s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.144s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.145s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.211s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.238s] -- Configuring incomplete, errors occurred!
+[0.238s] See also "/home/sputnik/Voloneiz/UartToSbus/ROS_humble/src/chassis_controller/build/chassis_controller/CMakeFiles/CMakeOutput.log".
+[0.238s] [31mCMake Error at /opt/ros/humble/share/ament_cmake_target_dependencies/cmake/ament_target_dependencies.cmake:77 (message):
+[0.238s]   ament_target_dependencies() the passed package name 'serial' was not found
+[0.238s]   before
+[0.238s] Call Stack (most recent call first):
+[0.238s]   CMakeLists.txt:22 (ament_target_dependencies)
+[0.238s] 
+[0.238s] [0m
+[0.242s] gmake: *** [Makefile:267: cmake_check_build_system] Error 1
+[0.244s] Invoked command in '/home/sputnik/Voloneiz/UartToSbus/ROS_humble/src/chassis_controller/build/chassis_controller' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/sputnik/Voloneiz/UartToSbus/ROS_humble/src/chassis_controller/build/chassis_controller -- -j20 -l20
