@@ -1,3 +1,15 @@
+
+
+# ROS Humble
+
+需要预先下载serial库为ros使用
+
+```sh
+sudo apt-get install ros-humble-serial-driver
+```
+
+
+
 # UartToSbus
 
 用于给机器人使用，在没有全场定位的情况下解锁px4飞控并控制，以及以后做一些有意思的东西使用。
@@ -18,10 +30,8 @@ g++ -g -std=c++11 -I../serial ../chassis_controller.cpp ../sbus.cpp ../test.c ..
 
 ```shell
 ./test
-```
 
-现在的问题：多线程没搞明白
-<img src="README.assets/image-20241123011044708.png" alt="image-20241123011044708" style="zoom:25%;" />
+```
 
 ## 开发日志
 

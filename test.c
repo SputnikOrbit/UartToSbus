@@ -10,17 +10,11 @@
 #include "sbus.hpp"
 #include "serial/serial.h"
 
-#include<csignal>
 
 serial::Serial SbusPort;
 
 chassis_controller mecanum = chassis_controller();
 
-    SbusPort.setPort("COM7");
-
-void signalHandler(int signum) {
-    running = false;
-}
 
 void RT_uart_to_sbus() {
     auto last_time = std::chrono::high_resolution_clock::now();
@@ -78,7 +72,6 @@ void RT_cmd_chassis() {
 
 
 int main(){
-    signal(SIGINT, signalHandler);
 
     std::cout << "Uart to SBUS!" << std::endl;
 
