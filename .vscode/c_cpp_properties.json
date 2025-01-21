@@ -4,7 +4,8 @@
             "name": "Linux",
             "includePath": [
                 "${workspaceFolder}/**",
-                "/home/sputnik/Voloneiz/UartToSbus/ROS_humble/src/chassis_controller/include"
+                "/home/sputnik/Voloneiz/UartToSbus/ROS_humble/src/chassis_controller/include",
+                "/opt/ros/humble/include/**"
             ],
             "defines": [],
             "compilerPath": "/usr/lib/ccache/gcc",
