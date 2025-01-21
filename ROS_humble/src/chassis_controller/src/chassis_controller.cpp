@@ -63,6 +63,7 @@ private:
         chassis_move->vy_set = 0;
         chassis_move->wz_set = 0;
         chassis_move->throttle_debug = 0;
+        channels[5] = PWM_MIN;  // Disarm the vehicle
 
         vx_setpoint = 0;
         vy_setpoint = 0;
@@ -82,7 +83,11 @@ private:
             chassis_move->vx_set = 0;
             chassis_move->vy_set = 0;
             chassis_move->wz_set = 0;
-            uart_to_sbus();
+            chassis_move->mode = 0;
+
+            channels[5] = PWM_MIN;  // Disarm the vehicle
+
+            uart_to_sbus(); //transmit the signal
         }
         if (now - last_msg_time_ > rclcpp::Duration(6s)) {
             RCLCPP_WARN(this->get_logger(), "No chassis cmd signal. Stopped.");
@@ -106,6 +111,8 @@ private:
         chassis_move->vx_set = vx_setpoint;
         chassis_move->vy_set = vy_setpoint;
         chassis_move->wz_set = wz_setpoint;
+        chassis_move->mode = 0; // mode0
+        channels[5] = PWM_MAX;  // arm the vehicle
         uart_to_sbus();
 
         RCLCPP_INFO(this->get_logger(), "chassis moving ad vx: %.2f, vy: %.2f, wz: %.2f", vx_setpoint, vy_setpoint, wz_setpoint);
@@ -152,9 +159,9 @@ private:
         // thrrottle set to mid
         channels[2] = chassis_move->throttle_debug * 800 + 1000;
         // mode to ch5
-        channels[4] = (chassis_move->mode) * 500 + PWM_MID;
+        channels[4] = chassis_move->mode * 1000; // mode0 
         // ch6 for arming switch
-        channels[5] = PWM_MIN;
+        //channel 6 is under programm control, arm when chassis_cmd signal activated
         // others for none
         for (int i = 6; i < 16; i++)
         {

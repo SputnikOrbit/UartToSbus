@@ -11,7 +11,7 @@
 #include "rclcpp/rclcpp.hpp"
 #include "std_msgs/msg/string.hpp"
 
-#define PWM_MAX 2000
+#define PWM_MAX 1800
 #define PWM_MIN 1000
 #define PWM_MID 1500
 #define PWM_OFF 500

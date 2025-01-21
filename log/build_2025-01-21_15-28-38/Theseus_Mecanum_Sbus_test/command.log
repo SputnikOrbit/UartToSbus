@@ -1,0 +1,4 @@
+Invoking command in '/home/sputnik/Voloneiz/UartToSbus/build/Theseus_Mecanum_Sbus_test': /usr/bin/cmake /home/sputnik/Voloneiz/UartToSbus -DCMAKE_INSTALL_PREFIX=/home/sputnik/Voloneiz/UartToSbus/install/Theseus_Mecanum_Sbus_test
+Invoked command in '/home/sputnik/Voloneiz/UartToSbus/build/Theseus_Mecanum_Sbus_test' returned '0': /usr/bin/cmake /home/sputnik/Voloneiz/UartToSbus -DCMAKE_INSTALL_PREFIX=/home/sputnik/Voloneiz/UartToSbus/install/Theseus_Mecanum_Sbus_test
+Invoking command in '/home/sputnik/Voloneiz/UartToSbus/build/Theseus_Mecanum_Sbus_test': /usr/bin/cmake --build /home/sputnik/Voloneiz/UartToSbus/build/Theseus_Mecanum_Sbus_test -- -j20 -l20
+Invoked command in '/home/sputnik/Voloneiz/UartToSbus/build/Theseus_Mecanum_Sbus_test' returned '2': /usr/bin/cmake --build /home/sputnik/Voloneiz/UartToSbus/build/Theseus_Mecanum_Sbus_test -- -j20 -l20
