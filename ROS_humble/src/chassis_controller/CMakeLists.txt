@@ -22,12 +22,12 @@ include_directories(
 )
 
 
-add_executable(chassis_controll src/chassis_controller.cpp ${SERIAL_SOURCES})
-ament_target_dependencies(chassis_controll rclcpp std_msgs)
+add_executable(chassis_control src/chassis_controller.cpp ${SERIAL_SOURCES})
+ament_target_dependencies(chassis_control rclcpp std_msgs)
 
 install(
   TARGETS
-  chassis_controll
+  chassis_control
   DESTINATION lib/${PROJECT_NAME}
 )
 
