@@ -1,0 +1,13 @@
+[01m[K/home/sputnik/Voloneiz/UartToSbus/test.c:2:10:[m[K [01;31m[Kfatal error: [m[Kctime: No such file or directory
+    2 | #include [01;31m[K<ctime>[m[K
+      |          [01;31m[K^~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/test.dir/build.make:76: CMakeFiles/test.dir/test.c.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+[01m[K/home/sputnik/Voloneiz/UartToSbus/sbus.cpp:22:10:[m[K [01;31m[Kfatal error: [m[Kserial/serial.h: No such file or directory
+   22 | #include [01;31m[K<serial/serial.h>[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/test.dir/build.make:104: CMakeFiles/test.dir/sbus.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:83: CMakeFiles/test.dir/all] Error 2
+gmake: *** [Makefile:91: all] Error 2
