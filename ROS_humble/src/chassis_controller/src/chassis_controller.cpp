@@ -147,21 +147,32 @@ private:
         
         // get vx vy wz from this frame
         // Use sscanf to extract vx, vy, wz values
-        if (sscanf(motion_command.c_str(), "vx%fvy%fwz%f", &vx_setpoint, &vy_setpoint, &wz_setpoint) != 3)
+        // if (sscanf(motion_command.c_str(), "vx%fvy%fwz%f", &vx_setpoint, &vy_setpoint, &wz_setpoint) != 3)
+        // {
+        //     std::cerr << "Invalid command format" << std::endl;
+        //     return;
+        // }
+
+                if (sscanf(motion_command.c_str(), "ch1%huch2%huch3%huch4%huch5%huch6%hu", 
+                &channels[0], &channels[1], &channels[2], 
+                &channels[3], &channels[4], &channels[5]) !=6)
         {
             std::cerr << "Invalid command format" << std::endl;
             return;
         }
 
         // Update chassis_move with new setpoints
-        chassis_move->vx_set = vx_setpoint;
-        chassis_move->vy_set = vy_setpoint;
-        chassis_move->wz_set = wz_setpoint;
-        chassis_move->mode = 0; // mode0
-        channels[5] = PWM_MAX;  // arm the vehicle
-        uart_to_sbus();
+        // chassis_move->vx_set = vx_setpoint;
+        // chassis_move->vy_set = vy_setpoint;
+        // chassis_move->wz_set = wz_setpoint;
+        // chassis_move->mode = 0; // mode0
+        // channels[5] = PWM_MAX;  // arm the vehicle
+        //uart_to_sbus();
+        uart_to_sbus_channelled();
 
-        RCLCPP_INFO(this->get_logger(), "chassis moving ad vx: %.2f, vy: %.2f, wz: %.2f", vx_setpoint, vy_setpoint, wz_setpoint);
+        RCLCPP_INFO(this->get_logger(), "channels : ch1%huch2%huch3%huch4%huch5%huch6%hu", 
+        channels[0], channels[1], channels[2], 
+        channels[3], channels[4], channels[5]);
         // Update last message time
         last_msg_time_ = this->now();
     }
@@ -194,6 +205,37 @@ private:
             std::cerr << "Unable to send data through serial port: " << e.what() << std::endl;
         }
     }
+
+        void uart_to_sbus_channelled()
+    {
+        // motion
+        //speed_to_sbus(chassis_move.get(), channels);
+            for (int i = 6; i < 16; i++)
+        {
+            channels[i] = PWM_MIN;
+        }
+        // define frame head
+        sbus_frame[0] = SBUS_FRAME_HEAD;
+
+        // define channels from byte 1 to byte 31
+        for (int i = 0; i < 16; i++)
+            sbus_frame[2 * i + 1] = channels[i] >> 8,
+                               sbus_frame[2 * i + 2] = channels[i] & 0xff;
+
+        // define frame tail
+        sbus_frame[33] = SBUS_FLAGS;
+        sbus_frame[34] = sbus_xor();
+
+        try
+        {
+            SbusPort.write(sbus_frame, 35); // Sends data to the downloader via serial port
+        }
+        catch (serial::IOException &e)
+        {
+            std::cerr << "Unable to send data through serial port: " << e.what() << std::endl;
+        }
+    }
+
 
     void speed_to_sbus(chassis_move_t *chassis_move, uint16_t *channels)
     {
