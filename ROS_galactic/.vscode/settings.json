@@ -1,0 +1,14 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/sputnik/Voloneiz/UartToSbus/ROS_galactic/install/chassis_controller_test/lib/python3.8/site-packages",
+        "/home/sputnik/Voloneiz/UartToSbus/ROS_galactic/install/chassis_controller_channels/lib/python3.8/site-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/sputnik/Voloneiz/UartToSbus/ROS_galactic/install/chassis_controller_test/lib/python3.8/site-packages",
+        "/home/sputnik/Voloneiz/UartToSbus/ROS_galactic/install/chassis_controller_channels/lib/python3.8/site-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ]
+}

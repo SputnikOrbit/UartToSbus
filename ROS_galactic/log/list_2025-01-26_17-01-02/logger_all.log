@@ -1,0 +1,73 @@
+[0.062s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'list', '-p', '--base-paths', '/home/sputnik/Voloneiz/UartToSbus/ROS_galactic']
+[0.062s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='list', build_base='build', ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['/home/sputnik/Voloneiz/UartToSbus/ROS_galactic'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], topological_order=False, names_only=False, paths_only=True, topological_graph=False, topological_graph_dot=False, topological_graph_density=False, topological_graph_legend=False, topological_graph_dot_cluster=False, topological_graph_dot_include_skipped=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x76a63e98dae0>, verb_extension=<colcon_package_information.verb.list.ListVerb object at 0x76a63e98cdf0>, main=<bound method ListVerb.main of <colcon_package_information.verb.list.ListVerb object at 0x76a63e98cdf0>>)
+[0.089s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.089s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.089s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.089s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.089s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.089s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/sputnik/Voloneiz/UartToSbus/ROS_galactic'
+[0.089s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sputnik/Voloneiz/UartToSbus/ROS_galactic) by extensions ['ignore', 'ignore_ament_install']
+[0.089s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sputnik/Voloneiz/UartToSbus/ROS_galactic) by extension 'ignore'
+[0.089s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sputnik/Voloneiz/UartToSbus/ROS_galactic) by extension 'ignore_ament_install'
+[0.089s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sputnik/Voloneiz/UartToSbus/ROS_galactic) by extensions ['colcon_pkg']
+[0.089s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sputnik/Voloneiz/UartToSbus/ROS_galactic) by extension 'colcon_pkg'
+[0.090s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sputnik/Voloneiz/UartToSbus/ROS_galactic) by extensions ['colcon_meta']
+[0.090s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sputnik/Voloneiz/UartToSbus/ROS_galactic) by extension 'colcon_meta'
+[0.090s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sputnik/Voloneiz/UartToSbus/ROS_galactic) by extensions ['ros']
+[0.090s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sputnik/Voloneiz/UartToSbus/ROS_galactic) by extension 'ros'
+[0.102s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sputnik/Voloneiz/UartToSbus/ROS_galactic) by extensions ['cmake', 'python']
+[0.102s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sputnik/Voloneiz/UartToSbus/ROS_galactic) by extension 'cmake'
+[0.102s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sputnik/Voloneiz/UartToSbus/ROS_galactic) by extension 'python'
+[0.102s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sputnik/Voloneiz/UartToSbus/ROS_galactic) by extensions ['python_setup_py']
+[0.102s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sputnik/Voloneiz/UartToSbus/ROS_galactic) by extension 'python_setup_py'
+[0.102s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sputnik/Voloneiz/UartToSbus/ROS_galactic/install) by extensions ['ignore', 'ignore_ament_install']
+[0.102s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sputnik/Voloneiz/UartToSbus/ROS_galactic/install) by extension 'ignore'
+[0.102s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sputnik/Voloneiz/UartToSbus/ROS_galactic/install) ignored
+[0.102s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sputnik/Voloneiz/UartToSbus/ROS_galactic/log) by extensions ['ignore', 'ignore_ament_install']
+[0.102s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sputnik/Voloneiz/UartToSbus/ROS_galactic/log) by extension 'ignore'
+[0.102s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sputnik/Voloneiz/UartToSbus/ROS_galactic/log) ignored
+[0.102s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sputnik/Voloneiz/UartToSbus/ROS_galactic/src) by extensions ['ignore', 'ignore_ament_install']
+[0.102s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sputnik/Voloneiz/UartToSbus/ROS_galactic/src) by extension 'ignore'
+[0.102s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sputnik/Voloneiz/UartToSbus/ROS_galactic/src) by extension 'ignore_ament_install'
+[0.102s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sputnik/Voloneiz/UartToSbus/ROS_galactic/src) by extensions ['colcon_pkg']
+[0.102s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sputnik/Voloneiz/UartToSbus/ROS_galactic/src) by extension 'colcon_pkg'
+[0.102s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sputnik/Voloneiz/UartToSbus/ROS_galactic/src) by extensions ['colcon_meta']
+[0.102s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sputnik/Voloneiz/UartToSbus/ROS_galactic/src) by extension 'colcon_meta'
+[0.102s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sputnik/Voloneiz/UartToSbus/ROS_galactic/src) by extensions ['ros']
+[0.102s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sputnik/Voloneiz/UartToSbus/ROS_galactic/src) by extension 'ros'
+[0.103s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sputnik/Voloneiz/UartToSbus/ROS_galactic/src) by extensions ['cmake', 'python']
+[0.103s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sputnik/Voloneiz/UartToSbus/ROS_galactic/src) by extension 'cmake'
+[0.103s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sputnik/Voloneiz/UartToSbus/ROS_galactic/src) by extension 'python'
+[0.103s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sputnik/Voloneiz/UartToSbus/ROS_galactic/src) by extensions ['python_setup_py']
+[0.103s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sputnik/Voloneiz/UartToSbus/ROS_galactic/src) by extension 'python_setup_py'
+[0.103s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sputnik/Voloneiz/UartToSbus/ROS_galactic/src/chassis_controller) by extensions ['ignore', 'ignore_ament_install']
+[0.103s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sputnik/Voloneiz/UartToSbus/ROS_galactic/src/chassis_controller) by extension 'ignore'
+[0.103s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sputnik/Voloneiz/UartToSbus/ROS_galactic/src/chassis_controller) by extension 'ignore_ament_install'
+[0.103s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sputnik/Voloneiz/UartToSbus/ROS_galactic/src/chassis_controller) by extensions ['colcon_pkg']
+[0.103s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sputnik/Voloneiz/UartToSbus/ROS_galactic/src/chassis_controller) by extension 'colcon_pkg'
+[0.103s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sputnik/Voloneiz/UartToSbus/ROS_galactic/src/chassis_controller) by extensions ['colcon_meta']
+[0.103s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sputnik/Voloneiz/UartToSbus/ROS_galactic/src/chassis_controller) by extension 'colcon_meta'
+[0.103s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sputnik/Voloneiz/UartToSbus/ROS_galactic/src/chassis_controller) by extensions ['ros']
+[0.103s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sputnik/Voloneiz/UartToSbus/ROS_galactic/src/chassis_controller) by extension 'ros'
+[0.105s] DEBUG:colcon.colcon_core.package_identification:Package '/home/sputnik/Voloneiz/UartToSbus/ROS_galactic/src/chassis_controller' with type 'ros.ament_cmake' and name 'chassis_controller'
+[0.105s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sputnik/Voloneiz/UartToSbus/ROS_galactic/src/chassis_controller_channels) by extensions ['ignore', 'ignore_ament_install']
+[0.105s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sputnik/Voloneiz/UartToSbus/ROS_galactic/src/chassis_controller_channels) by extension 'ignore'
+[0.105s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sputnik/Voloneiz/UartToSbus/ROS_galactic/src/chassis_controller_channels) by extension 'ignore_ament_install'
+[0.105s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sputnik/Voloneiz/UartToSbus/ROS_galactic/src/chassis_controller_channels) by extensions ['colcon_pkg']
+[0.105s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sputnik/Voloneiz/UartToSbus/ROS_galactic/src/chassis_controller_channels) by extension 'colcon_pkg'
+[0.105s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sputnik/Voloneiz/UartToSbus/ROS_galactic/src/chassis_controller_channels) by extensions ['colcon_meta']
+[0.105s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sputnik/Voloneiz/UartToSbus/ROS_galactic/src/chassis_controller_channels) by extension 'colcon_meta'
+[0.105s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sputnik/Voloneiz/UartToSbus/ROS_galactic/src/chassis_controller_channels) by extensions ['ros']
+[0.105s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sputnik/Voloneiz/UartToSbus/ROS_galactic/src/chassis_controller_channels) by extension 'ros'
+[0.106s] DEBUG:colcon.colcon_core.package_identification:Package '/home/sputnik/Voloneiz/UartToSbus/ROS_galactic/src/chassis_controller_channels' with type 'ros.ament_python' and name 'chassis_controller_channels'
+[0.106s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sputnik/Voloneiz/UartToSbus/ROS_galactic/src/chassis_controller_test) by extensions ['ignore', 'ignore_ament_install']
+[0.106s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sputnik/Voloneiz/UartToSbus/ROS_galactic/src/chassis_controller_test) by extension 'ignore'
+[0.106s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sputnik/Voloneiz/UartToSbus/ROS_galactic/src/chassis_controller_test) by extension 'ignore_ament_install'
+[0.106s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sputnik/Voloneiz/UartToSbus/ROS_galactic/src/chassis_controller_test) by extensions ['colcon_pkg']
+[0.106s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sputnik/Voloneiz/UartToSbus/ROS_galactic/src/chassis_controller_test) by extension 'colcon_pkg'
+[0.106s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sputnik/Voloneiz/UartToSbus/ROS_galactic/src/chassis_controller_test) by extensions ['colcon_meta']
+[0.106s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sputnik/Voloneiz/UartToSbus/ROS_galactic/src/chassis_controller_test) by extension 'colcon_meta'
+[0.106s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sputnik/Voloneiz/UartToSbus/ROS_galactic/src/chassis_controller_test) by extensions ['ros']
+[0.106s] Level 1:colcon.colcon_core.package_identification:_identify(/home/sputnik/Voloneiz/UartToSbus/ROS_galactic/src/chassis_controller_test) by extension 'ros'
+[0.106s] DEBUG:colcon.colcon_core.package_identification:Package '/home/sputnik/Voloneiz/UartToSbus/ROS_galactic/src/chassis_controller_test' with type 'ros.ament_python' and name 'chassis_controller_test'
+[0.106s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults

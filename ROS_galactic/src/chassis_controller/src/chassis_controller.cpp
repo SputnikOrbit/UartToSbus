@@ -1,9 +1,9 @@
 /**
-  **************************** 2024 Theseus Mecanum****************************
+  **************************** 2025 Theseus Mecanum****************************
   * @file       chassis_controller.cpp/hpp
   * @brief      ROS humble package src for sbus px4 override control
   * @note       This node accepts the topic "chassis_command" in formation of 
-  *             "vx%fvy%fz%f" and sends the sbus signal through serial port.
+  *             "vx%fvy%fz%fm%f" and sends the sbus signal through serial port.
   *              when conneection down, pull over the vehicle automatically.
   *             Core functions :chassis_control_callback  main control function
   *                             uart_to_sbus              main transmission function
@@ -27,7 +27,7 @@
 
 class ChassisController : public rclcpp::Node
 {
-    // formate: x%fy%fz%f
+    // formate: x%fy%fz%fm%f
 public:
     ChassisController() : Node("chassis_controller"), ConnectionStatus(0), CommandStatus(0)
     {
@@ -54,11 +54,11 @@ public:
 
         //订阅者设置
         motion_commander_ = this->create_subscription<std_msgs::msg::String>(
-            "chassis_command", 10, [this](const std_msgs::msg::String::SharedPtr msg)  //话题位置
-            { this->chassis_controll_callback(msg); });
+            "chassis_command", 10, [this](const std_msgs::msg::String::SharedPtr msg)  
+            { this->chassis_control_callback(msg); });  //话题位置
 
 
-        //看门狗计时器设置
+        //看门狗计时器设置：机器人掉线、程序停止自动检测停止运动
         timeout_timer_ = this->create_wall_timer(
             std::chrono::milliseconds(500), std::bind(&ChassisController::check_timeout, this));
         last_msg_time_ = this->now();
@@ -105,7 +105,7 @@ private:
         chassis_move->throttle_debug = 0;
         channels[5] = PWM_MIN;  // Disarm the vehicle
 
-        //速度设定初始化
+        //速度设定初始化：用于数据缓冲与各种判断，防止异常指令直接输入机器人内部导致混乱
         vx_setpoint = 0;
         vy_setpoint = 0;
         wz_setpoint = 0;
@@ -140,39 +140,32 @@ private:
 
 
     //核心控制函数
-    void chassis_controll_callback(const std_msgs::msg::String::SharedPtr msg)
+    void chassis_control_callback(const std_msgs::msg::String::SharedPtr msg)
     {
         RCLCPP_INFO(this->get_logger(), "Chassis standingby");
         std::string motion_command = msg->data;
         
-        // get vx vy wz from this frame
-        // Use sscanf to extract vx, vy, wz values
-        // if (sscanf(motion_command.c_str(), "vx%fvy%fwz%f", &vx_setpoint, &vy_setpoint, &wz_setpoint) != 3)
-        // {
-        //     std::cerr << "Invalid command format" << std::endl;
-        //     return;
-        // }
-
-                if (sscanf(motion_command.c_str(), "ch1%huch2%huch3%huch4%huch5%huch6%hu", 
-                &channels[0], &channels[1], &channels[2], 
-                &channels[3], &channels[4], &channels[5]) !=6)
+        //get vx vy wz mode from this frame
+        if (sscanf(motion_command.c_str(), "x%fy%fz%fm%f", &vx_setpoint, &vy_setpoint, &wz_setpoint, &mode_setpoint) != 3)
         {
             std::cerr << "Invalid command format" << std::endl;
             return;
         }
 
         // Update chassis_move with new setpoints
-        // chassis_move->vx_set = vx_setpoint;
-        // chassis_move->vy_set = vy_setpoint;
-        // chassis_move->wz_set = wz_setpoint;
-        // chassis_move->mode = 0; // mode0
-        // channels[5] = PWM_MAX;  // arm the vehicle
-        //uart_to_sbus();
-        uart_to_sbus_channelled();
+        chassis_move->vx_set = vx_setpoint;
+        chassis_move->vy_set = vy_setpoint;
+        chassis_move->wz_set = wz_setpoint;
+        chassis_move->mode = mode_setpoint; // mode0
+        channels[5] = PWM_MAX;  // arm the vehicle
+        uart_to_sbus();
+        //uart_to_sbus_channelled();
 
-        RCLCPP_INFO(this->get_logger(), "channels : ch1%huch2%huch3%huch4%huch5%huch6%hu", 
-        channels[0], channels[1], channels[2], 
-        channels[3], channels[4], channels[5]);
+        // RCLCPP_INFO(this->get_logger(), "channels : ch1%huch2%huch3%huch4%huch5%huch6%hu", 
+        // channels[0], channels[1], channels[2], 
+        // channels[3], channels[4], channels[5]);
+        RCLCPP_INFO(this->get_logger(), "chassis moving ad vx: %.2f, vy: %.2f, wz: %.2f, mode: %d",
+         vx_setpoint, vy_setpoint, wz_setpoint, mode_setpoint);
         // Update last message time
         last_msg_time_ = this->now();
     }
